@@ -14,7 +14,7 @@ html {
 .main {
 	max-width: 940px;
 	margin: 0 auto;
-	padding-top: 1em;
+	padding-top: 3.5em;
 	padding-bottom: 3em
 }
 
@@ -358,17 +358,25 @@ Blog
 }
 
 
-	
-
 
 .center {
 	text-align: center;
 	padding-top: 1%;
 }
 
-.main {
-	padding-top: 80px;
+.post-footer {
+	font-size: 12px;
+	font-weight: 800;
+	color: rgba(235, 112, 90, 0.74);
+	margin-top: -5px;
 }
+
+.post {
+	padding-bottom: 50px;
+	padding-top: 10px;
+}
+
+
 
 
 /******************
@@ -378,10 +386,6 @@ Contact Form
 	text-align: center;
 	padding-top: 1%;
 	margin-left: 60px;
-}
-
-.main {
-	padding-top: 80px;
 }
 
 form {
@@ -444,6 +448,14 @@ CONTACT SECTION
 /******************
 HOME SECTION
 ******************/
+
+.profile-photo {
+	display: block;
+	max-width: 200px;
+	margin: 0 auto 30px;
+	border-radius: 100%;
+	
+}
 
 .home-section {
 	background: #fcfcfc;
