@@ -40,7 +40,7 @@ a {
 body  {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5rem;
-	color: #656565;
+	color: #606060;
 	background: whitesmoke;
 	}
 
@@ -353,7 +353,7 @@ Blog
 
 .blog {
 	width: 100%;
-	background: whitesmoke;
+	background: #fafafa;
   box-shadow: inset 0px 2px 9px 0px rgba(181, 181, 181, 0.26);
 }
 
@@ -389,7 +389,7 @@ Contact Form
 }
 
 form {
- padding: 3% 16% 8% 0%;
+ text-align: center;
 }
 
 
@@ -444,21 +444,41 @@ CONTACT SECTION
 	background-color: #3caf3c;
 }
 
+/******************
+ABOUT SECTION
+******************/
+
+
+.opening-box {
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 45px;
+	padding-bottom: 60px;
+	background-color: whitesmoke;
+	overflow: auto;
+}
+
+.opening-statement {
+	padding-top: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-photo {
+	display: block;
+	max-width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 100%;
+
+}
 
 /******************
 HOME SECTION
 ******************/
 
-.profile-photo {
-	display: block;
-	max-width: 200px;
-	margin: 0 auto 30px;
-	border-radius: 100%;
-	
-}
-
 .home-section {
-	background: #fcfcfc;
+	background: whitesmoke;
 	width: 100%;
 	height: 300px;
 	padding-top: 30px;
