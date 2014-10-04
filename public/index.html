@@ -1,49 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html data-wf-site="542e03af258b510656fdd160" data-wf-page="542e03af258b510656fdd162">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Benji Dalton - Design &amp; Develop</title>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/style.css">
 		<meta name="viewport" content="width=device-width">
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Lobster|Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script type="text/javascript">
-   $(document).ready(function(){
-    var classes = ['hero', 'hero2', 'hero3', 'hero4', 'hero5'];
-		var randomNumber = Math.floor(Math.random() * classes.length);
-    $('header').addClass(classes[randomNumber]);
-   });
-    </script>
-		<script src="js/animatescroll.js"></script>
-		<script src="js/wow.min.js"></script>
-		
-	<script type="text/javascript">
-		$(document).on("scroll",function(){
-			if($(document).scrollTop()>490){ 
-				$("nav").removeClass("large").addClass("small");
-				}
-			else{
-				$("nav").removeClass("small").addClass("large");
-				}
-			});
-	</script>
-	
-		<script type="text/javascript">
-		$(document).on("scroll",function(){
-			if($(document).scrollTop()>490){ 
-				$("#title-small").removeClass("jumbo").addClass("mini");
-				}
-			else{
-				$("#title-small").removeClass("mini").addClass("jumbo");
-				}
-			});
-	</script>
-	<link rel="stylesheet" href="css/benji-icons.css">
+		<script type="text/javascript" src="js/modernizr.js"></script>
+	  <link rel="stylesheet" href="css/benji-icons.css">
     <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/benji-icons-ie7.css"><![endif]-->
 	</head>
 	<body>
@@ -129,30 +97,23 @@
 	<div class="contact-section" id="contact">
 				<div class="margin">
 	<h3 class="center">Fill in the form and I'll get back to you.</h3></div>
-	<form class="pure-form pure-form-aligned">
-			<fieldset>
-					<div class="pure-control-group">
-							
-							<input id="name" type="text" placeholder="Your Name">
-					</div>
+	
+	<div class="w-form form-margins">
+    <form class="form" name="email-form" data-name="Email Form">
+      <input class="w-input field" type="text" placeholder="Your name" name="name" data-name="Name">
+      <input class="w-input field" type="email" placeholder="Your email address" name="email" data-name="Email" required="required">
+      <textarea class="w-input field comments" placeholder="Message"></textarea>
+      <input class="w-button button" type="submit" value="Send Message" data-wait="Please wait...">
+    </form>
+    <div class="w-form-done success">
+      <h2>Thank you!</h2>
+      <p>Your submission has been received!</p>
+    </div>
+    <div class="w-form-fail">
+      <p>Oops! Something went wrong while submitting the form :(</p>
+    </div>
+  </div>
 
-
-					<div class="pure-control-group">
-							<input id="email" type="email" placeholder="Email Address">
-					</div>
-
-					<div class="pure-control-group">
-							
-							<input id="message" type="text" placeholder="Your message" >
-					</div>
-
-					<div>
-
-
-							<button type="submit" class="pure-button pure-button-primary">Submit</button>
-					</div>
-			</fieldset>
-	</form>	
 	</div>
 		<footer>
 			<div class="margin">
@@ -160,7 +121,39 @@
 				<a href="http://twitter.com/daylightsavings"><img src="img/twitter.png" alt="" class="social-icon"></a>
 				<a href="http://facebook.com/daylightsavings"><img src="img/facebook.png" alt="" class="social-icon"></a>
 			</div>
-		</footer>			
+		</footer>	
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript">
+   $(document).ready(function(){
+    var classes = ['hero', 'hero2', 'hero3', 'hero4', 'hero5'];
+		var randomNumber = Math.floor(Math.random() * classes.length);
+    $('header').addClass(classes[randomNumber]);
+   });
+    </script>
+		<script src="js/animatescroll.js"></script>
+		<script src="js/wow.min.js"></script>
+		
+	<script type="text/javascript">
+		$(document).on("scroll",function(){
+			if($(document).scrollTop()>490){ 
+				$("nav").removeClass("large").addClass("small");
+				}
+			else{
+				$("nav").removeClass("small").addClass("large");
+				}
+			});
+	</script>
+	
+		<script type="text/javascript">
+		$(document).on("scroll",function(){
+			if($(document).scrollTop()>490){ 
+				$("#title-small").removeClass("jumbo").addClass("mini");
+				}
+			else{
+				$("#title-small").removeClass("mini").addClass("jumbo");
+				}
+			});
+	</script>		
 	<script>
 $( document ).ready(function() {
 new WOW().init();
@@ -171,5 +164,8 @@ $( document ).ready(function() {
 		$('#title').animatescroll({scrollSpeed:2000,easing:'easeInOutBack', element:'body',padding:-190});
 	});
 	</script>
+	  
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 	</body>
 </html>
