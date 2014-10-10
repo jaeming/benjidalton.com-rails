@@ -10,6 +10,8 @@ html {
 
 .main {
   max-width: 940px;
+	padding-left: 5%;
+	padding-right: 5%;
   margin: 0 auto;
   padding-top: 3.5em;
   padding-bottom: 3em;
@@ -30,9 +32,25 @@ a {
   color: #a0a0a0;
 }
 
+.post p a {
+	padding-left: 1px;
+	padding-right: 1px;
+	text-decoration: none;
+  color: #a75252;
+	transition: all 550ms ease-in-out;
+}
+
+.post p a:hover {
+	text-decoration: none;
+  color: tomato;
+
+	font-size: 1.17rem;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6rem;
+	font-size: 1rem;
 	letter-spacing: .4px;
   color: #606060;
   background: whitesmoke;
@@ -667,9 +685,7 @@ CONTACT SECTION
 /******************
 ABOUT SECTION
 ******************/
-.code-para {
-  padding-bottom: 20px;
-}
+
 
 .c-links {
   text-align: center;
@@ -720,11 +736,7 @@ ABOUT SECTION
   overflow: auto;
 }
 
-.opening-statement {
-  padding-top: 25px;
-  max-width: 900px;
-  margin: 0 auto;
-}
+
 
 .profile-photo {
   display: block;
@@ -894,6 +906,10 @@ font-icons
 /******************
 Responsive
 ******************/
+
+
+
+
 @media (max-width: 760px) {
 
 	
@@ -1005,157 +1021,13 @@ Responsive
   }
 
   .home-section {
-    background: whitesmoke;
-    width: 100%;
-    height: 250px;
-    padding-top: 0px;
-    box-shadow: inset 0px 2px 5px 0px rgba(181, 181, 181, 0.18);
+		display: none;
+
   }
 
-  .mission-titles-1 {
-    font-family: 'Lobster', sans-serif;
-    position: absolute;
-    text-align: center;
-    top: 6.5px;
-    left: 12px;
-    color: rgb(252, 140, 120);
-    font-size: 44px;
-  }
-
-  .mission-titles-2 {
-    font-family: 'Lobster', sans-serif;
-    position: absolute;
-    text-align: center;
-    top: 6.5px;
-    left: 8px;
-    color: rgb(252, 140, 120);
-    font-size: 44px;
-  }
-
-  .mission-titles-3 {
-    font-family: 'Lobster', sans-serif;
-    position: absolute;
-    text-align: center;
-    top: 6.5px;
-    left: 11px;
-    color: rgb(252, 140, 120);
-    font-size: 44px;
-  }
-
-  .mission-statement {
-    width: 700px;
-    margin: 0 auto;
-    padding-top: 70px;
-  }
-
-
-/******************
-font-icons
-******************/
-
-  .the-icons {
-    transition: all 1s ease;
-    position: relative;
-    background: rgba(255, 255, 255, 0);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-    margin: 0 55px;
-  }
-
-  .the-icons-2 {
-    transition: all 1s ease;
-    position: relative;
-    text-align: center;
-    background: rgba(255, 255, 255, 0);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-    margin: 0 55px;
-  }
-
-  .the-icons-3 {
-    transition: all 1s ease;
-    position: relative;
-    text-align: center;
-    background: rgba(255, 255, 255, 0);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-    margin: 0 55px;
-  }
-
-  .icon-spin4 {
-    transition: all 1s ease;
-    font-size: 120px;
-    color: rgba(252, 140, 120, 0.14);
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -59px;
-  }
-
-  .icon-spin4:hover {
-    font-size: 120px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -60px;
-    border: 0px solid rgba(255, 255, 255, 0);
-  }
-
-  .icon-spin5 {
-    transition: all 1s ease;
-    font-size: 120px;
-    color: rgba(252, 140, 120, 0.14);
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -59px;
-  }
-
-  .icon-spin5:hover {
-    font-size: 120px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -60px;
-    border: 0px solid rgba(255, 255, 255, 0);
-  }
-
-  .icon-spin1 {
-    transition: all 1s ease;
-    font-size: 120px;
-    color: rgba(252, 140, 120, 0.14);
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -59px;
-  }
-
-  .icon-spin1:hover {
-    font-size: 120px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -60px;
-    border: 0px solid rgba(255, 255, 255, 0);
-  }
 }
 
-@media (min-width: 761px) {
+@media (max-width: 761px) {
 
   .main p, h3 {
     max-width: 90%;
@@ -1164,157 +1036,11 @@ font-icons
   }
 
   .home-section {
-    background: whitesmoke;
-    width: 100%;
-    height: 250px;
-    padding-top: 0px;
-    box-shadow: inset 0px 2px 5px 0px rgba(181, 181, 181, 0.18);
-  }
-
-  .mission-titles-1 {
-    font-family: 'Lobster', sans-serif;
-    position: absolute;
-    text-align: center;
-    top: 6.5px;
-    left: 12px;
-    color: rgb(252, 140, 120);
-    font-size: 44px;
-  }
-
-  .mission-titles-2 {
-    font-family: 'Lobster', sans-serif;
-    position: absolute;
-    text-align: center;
-    top: 6.5px;
-    left: 8px;
-    color: rgb(252, 140, 120);
-    font-size: 44px;
-  }
-
-  .mission-titles-3 {
-    font-family: 'Lobster', sans-serif;
-    position: absolute;
-    text-align: center;
-    top: 6.5px;
-    left: 11px;
-    color: rgb(252, 140, 120);
-    font-size: 44px;
-  }
-
-  .mission-statement {
-    width: 700px;
-    margin: 0 auto;
-    padding-top: 70px;
-  }
-
-
-/******************
-font-icons
-******************/
-
-  .the-icons {
-    transition: all 1s ease;
-    position: relative;
-    background: rgba(255, 255, 255, 0);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-    margin: 0 55px;
-  }
-
-  .the-icons-2 {
-    transition: all 1s ease;
-    position: relative;
-    text-align: center;
-    background: rgba(255, 255, 255, 0);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-    margin: 0 55px;
-  }
-
-  .the-icons-3 {
-    transition: all 1s ease;
-    position: relative;
-    text-align: center;
-    background: rgba(255, 255, 255, 0);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-    margin: 0 55px;
-  }
-
-  .icon-spin4 {
-    transition: all 1s ease;
-    font-size: 120px;
-    color: rgba(252, 140, 120, 0.14);
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -59px;
-  }
-
-  .icon-spin4:hover {
-    font-size: 120px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -60px;
-    border: 0px solid rgba(255, 255, 255, 0);
-  }
-
-  .icon-spin5 {
-    transition: all 1s ease;
-    font-size: 120px;
-    color: rgba(252, 140, 120, 0.14);
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -59px;
-  }
-
-  .icon-spin5:hover {
-    font-size: 120px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -60px;
-    border: 0px solid rgba(255, 255, 255, 0);
-  }
-
-  .icon-spin1 {
-    transition: all 1s ease;
-    font-size: 120px;
-    color: rgba(252, 140, 120, 0.14);
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -59px;
-  }
-
-  .icon-spin1:hover {
-    font-size: 120px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -60px;
-    border: 0px solid rgba(255, 255, 255, 0);
+		display: none;
   }
 }
 
-@media (min-width: 1030px) {
+@media (max-width: 980px) {
 
   #title-small.mini {
     text-align: left;
@@ -1335,351 +1061,17 @@ font-icons
     -o-transition: all .6s;
  /* Opera */;
   } 
-	
-/******************
-HOME SECTION
-******************/
 
   .home-section {
-    background: whitesmoke;
-    width: 100%;
-    height: 300px;
-    padding-top: 30px;
-    box-shadow: inset 0px 2px 5px 0px rgba(181, 181, 181, 0.18);
-  }
-
-  .mission-titles-1 {
-    font-family: 'Lobster', sans-serif;
-    position: absolute;
-    text-align: center;
-    top: 6.5px;
-    left: 12px;
-    color: rgb(252, 140, 120);
-    font-size: 44px;
-  }
-
-  .mission-titles-2 {
-    font-family: 'Lobster', sans-serif;
-    position: absolute;
-    text-align: center;
-    top: 6.5px;
-    left: 8px;
-    color: rgb(252, 140, 120);
-    font-size: 44px;
-  }
-
-  .mission-titles-3 {
-    font-family: 'Lobster', sans-serif;
-    position: absolute;
-    text-align: center;
-    top: 6.5px;
-    left: 11px;
-    color: rgb(252, 140, 120);
-    font-size: 44px;
-  }
-
-  .mission-statement {
-    width: 960px;
-    margin: 0 auto;
-    padding-top: 70px;
-  }
-
-
-/******************
-font-icons
-******************/
-
-  .icon-spin4 {
-    transition: all 1s ease;
-    font-size: 120px;
-    color: rgba(252, 140, 120, 0.14);
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -59px;
-  }
-
-  .the-icons {
-    transition: all 1s ease;
-    position: relative;
-    background: rgba(255, 255, 255, 0);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-    margin: 0 100px;
-  }
-
-  .icon-spin4:hover {
-    font-size: 120px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -60px;
-    border: 0px solid rgba(255, 255, 255, 0);
-  }
-
-  .icon-spin5 {
-    transition: all 1s ease;
-    font-size: 120px;
-    color: rgba(252, 140, 120, 0.14);
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -59px;
-  }
-
-  .the-icons-2 {
-    transition: all 1s ease;
-    position: relative;
-    text-align: center;
-    background: rgba(255, 255, 255, 0);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-    margin: 0 100px;
-  }
-
-  .icon-spin5:hover {
-    font-size: 120px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -60px;
-    border: 0px solid rgba(255, 255, 255, 0);
-  }
-
-  .icon-spin1 {
-    transition: all 1s ease;
-    font-size: 120px;
-    color: rgba(252, 140, 120, 0.14);
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -59px;
-  }
-
-  .the-icons-3 {
-    transition: all 1s ease;
-    position: relative;
-    text-align: center;
-    background: rgba(255, 255, 255, 0);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-    margin: 0 100px;
-  }
-
-  .icon-spin1:hover {
-    font-size: 120px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -60px;
-    border: 0px solid rgba(255, 255, 255, 0);
-  }
-}
-
-@media (min-width: 1250px) {
-	
-
-  #title-small.mini {
-    text-align: left;
-    color: whitesmoke;
-    float: left;
-    font-size: 30px;
-    padding-top: 9px;
-    padding-left: 18%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: all .6s;
-    z-index: 9000;
-    -moz-transition: all .6s;
- /* Firefox 4 */
-    -webkit-transition: all .6s;
- /* Safari and Chrome */
-    -o-transition: all .6s;
- /* Opera */;
-  }
-
-  nav.small ul {
-    list-style: none;
-    text-align: right;
-    width: 100%;
-    background: rgb(59, 59, 59);
-    margin: 0px 0;
-    padding: 10px 20% 10px 0;
-    transition: all .6s;
-    position: fixed;
-    float: right;
-    right: 0;
-    top: 0;
+		display: none;
   }
 	
-/******************
-HOME SECTION
-******************/
-
-  .home-section {
-    background: whitesmoke;
-    width: 100%;
-    height: 300px;
-    padding-top: 30px;
-    box-shadow: inset 0px 2px 5px 0px rgba(181, 181, 181, 0.18);
+	.main p, h3 {
+    max-width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
-  .mission-titles-1 {
-    font-family: 'Lobster', sans-serif;
-    position: absolute;
-    text-align: center;
-    top: 6.5px;
-    left: 12px;
-    color: rgb(252, 140, 120);
-    font-size: 44px;
-  }
-
-  .mission-titles-2 {
-    font-family: 'Lobster', sans-serif;
-    position: absolute;
-    text-align: center;
-    top: 6.5px;
-    left: 8px;
-    color: rgb(252, 140, 120);
-    font-size: 44px;
-  }
-
-  .mission-titles-3 {
-    font-family: 'Lobster', sans-serif;
-    position: absolute;
-    text-align: center;
-    top: 6.5px;
-    left: 11px;
-    color: rgb(252, 140, 120);
-    font-size: 44px;
-  }
-
-  .mission-statement {
-    width: 960px;
-    margin: 0 auto;
-    padding-top: 70px;
-  }
-
-
-/******************
-font-icons
-******************/
-
-  .icon-spin4 {
-    transition: all 1s ease;
-    font-size: 120px;
-    color: rgba(252, 140, 120, 0.14);
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -59px;
-  }
-
-  .the-icons {
-    transition: all 1s ease;
-    position: relative;
-    background: rgba(255, 255, 255, 0);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-    margin: 0 100px;
-  }
-
-  .icon-spin4:hover {
-    font-size: 120px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -60px;
-    border: 0px solid rgba(255, 255, 255, 0);
-  }
-
-  .icon-spin5 {
-    transition: all 1s ease;
-    font-size: 120px;
-    color: rgba(252, 140, 120, 0.14);
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -59px;
-  }
-
-  .the-icons-2 {
-    transition: all 1s ease;
-    position: relative;
-    text-align: center;
-    background: rgba(255, 255, 255, 0);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-    margin: 0 100px;
-  }
-
-  .icon-spin5:hover {
-    font-size: 120px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -60px;
-    border: 0px solid rgba(255, 255, 255, 0);
-  }
-
-  .icon-spin1 {
-    transition: all 1s ease;
-    font-size: 120px;
-    color: rgba(252, 140, 120, 0.14);
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -59px;
-  }
-
-  .the-icons-3 {
-    transition: all 1s ease;
-    position: relative;
-    text-align: center;
-    background: rgba(255, 255, 255, 0);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-    margin: 0 100px;
-  }
-
-  .icon-spin1:hover {
-    font-size: 120px;
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -42px 25px 25px -60px;
-    border: 0px solid rgba(255, 255, 255, 0);
-  }
 }
+
 
