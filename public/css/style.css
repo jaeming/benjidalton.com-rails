@@ -48,12 +48,18 @@ a {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+	font-family: 'Arvo', serif;
   line-height: 1.6rem;
-	font-size: 1rem;
+	font-size: 1.2rem;
+	font-weight: 400;
 	letter-spacing: .4px;
-  color: #606060;
+  color: #484848;
   background: whitesmoke;
+}
+
+p {
+	text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 h1 {
@@ -68,8 +74,16 @@ h1 {
 
 h2 {
   font-size: .8em;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: normal;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2rem;
+	font-weight: 800;
+	line-height: 2.5rem;
+	color: #484848;
 }
 
 
@@ -85,7 +99,7 @@ HEADER & NAV
 .hero {
   background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/cliff.jpg") no-repeat center fixed;
   background-size: cover;
-  height: 33em;
+  height: 634px;
   box-shadow: 0 4px 2px -2px #b5b5b5;
   overflow: hidden;
 }
@@ -93,7 +107,7 @@ HEADER & NAV
 .hero2 {
   background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/fenced.jpg") no-repeat center fixed;
   background-size: cover;
-  height: 33em;
+  height: 634px;
   box-shadow: 0 4px 2px -2px #b5b5b5;
   overflow: hidden;
 }
@@ -101,7 +115,7 @@ HEADER & NAV
 .hero3 {
   background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/droplets.jpg") no-repeat center fixed;
   background-size: cover;
-  height: 33em;
+  height: 634px;
   box-shadow: 0 4px 2px -2px #b5b5b5;
   overflow: hidden;
 }
@@ -109,7 +123,7 @@ HEADER & NAV
 .hero4 {
   background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/flare.jpg") no-repeat center fixed;
   background-size: cover;
-  height: 33em;
+  height: 634px;
   box-shadow: 0 4px 2px -2px #b5b5b5;
   overflow: hidden;
 }
@@ -117,7 +131,7 @@ HEADER & NAV
 .hero5 {
   background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/grass.jpg") no-repeat center fixed;
   background-size: cover;
-  height: 33em;
+  height: 634px;
   box-shadow: 0 4px 2px -2px #b5b5b5;
   overflow: hidden;
 }
@@ -125,7 +139,7 @@ HEADER & NAV
 .hero6 {
   background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/tree.jpg") no-repeat center fixed;
   background-size: cover;
-  height: 33em;
+  height: 634px;
   box-shadow: 0 4px 2px -2px #b5b5b5;
   overflow: hidden;
 }
@@ -135,7 +149,7 @@ HEADER & NAV
 
 .logo {
   text-align: center;
-  padding-top: 3.05em;
+  padding-top: 376px;
   transition: all .6s;
   -moz-transition: all .6s;
  /* Firefox 4 */
@@ -415,6 +429,10 @@ Blog
 Contact Form
 ******************/
 
+input {
+  font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+}
 
 .w-form {
   margin: 0 0 15px;
@@ -727,13 +745,15 @@ ABOUT SECTION
   margin-left: 40px;
 }
 
-.opening-box {
-  padding-left: 20%;
-  padding-right: 20%;
+.about-box {
+	max-width: 900px;
+	margin: 0 auto;
   padding-top: 45px;
   padding-bottom: 60px;
   background-color: whitesmoke;
   overflow: auto;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 
@@ -911,6 +931,42 @@ Responsive
 
 
 @media (max-width: 760px) {
+	
+	.c-links {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+.code-icon-text {
+  color: #484848;
+  font-family: 'lobster', sans-serif;
+  font-size: 25px;
+  display: block;
+  text-align: center;
+  transition: all 500ms ease;
+	padding: 0;
+	margin-top: 0px;
+}
+
+.code-icon-text:hover {
+  color: tomato;
+  font-family: 'lobster', sans-serif;
+  font-size: 25px;
+  display: block;
+  text-align: center;
+	padding: 0;
+	margin-top: 0px;
+
+}
+
+.code-icons {
+  width: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 	
   h1 {
@@ -923,14 +979,14 @@ Responsive
 
   .logo {
     text-align: center;
-    padding-top: 0%;
+    padding-top: 0;
   }
 	
 /*Random header Image*/
   .hero {
     background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/cliff.jpg") no-repeat center fixed;
     background-size: cover;
-    height: 200px;
+    height: 220px;
     box-shadow: 0 4px 2px -2px #b5b5b5;
     overflow: hidden;
   }
@@ -938,7 +994,7 @@ Responsive
   .hero2 {
     background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/fenced.jpg") no-repeat center fixed;
     background-size: cover;
-    height: 200px;
+    height: 220px;
     box-shadow: 0 4px 2px -2px #b5b5b5;
     overflow: hidden;
   }
@@ -946,7 +1002,7 @@ Responsive
   .hero3 {
     background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/droplets.jpg") no-repeat center fixed;
     background-size: cover;
-    height: 200px;
+    height: 220px;
     box-shadow: 0 4px 2px -2px #b5b5b5;
     overflow: hidden;
   }
@@ -954,7 +1010,7 @@ Responsive
   .hero4 {
     background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/flare.jpg") no-repeat center fixed;
     background-size: cover;
-    height: 200px;
+    height: 220px;
     box-shadow: 0 4px 2px -2px #b5b5b5;
     overflow: hidden;
   }
@@ -962,7 +1018,7 @@ Responsive
   .hero5 {
     background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/grass.jpg") no-repeat center fixed;
     background-size: cover;
-    height: 200px;
+    height: 220px;
     box-shadow: 0 4px 2px -2px #b5b5b5;
     overflow: hidden;
   }
@@ -970,7 +1026,7 @@ Responsive
   .hero6 {
     background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/tree.jpg") no-repeat center fixed;
     background-size: cover;
-    height: 200px;
+    height: 220px;
     box-shadow: 0 4px 2px -2px #b5b5b5;
     overflow: hidden;
   }
@@ -1071,6 +1127,8 @@ Responsive
     padding-left: 5%;
     padding-right: 5%;
   }
+	
+
 
 }
 
