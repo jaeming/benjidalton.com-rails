@@ -50,7 +50,7 @@ a {
 body {
 	font-family: 'Arvo', serif;
   line-height: 1.6rem;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: 400;
 	letter-spacing: .4px;
   color: #484848;
@@ -58,6 +58,7 @@ body {
 }
 
 p {
+	font-size: 1.3rem;
 	text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
 }
@@ -80,9 +81,9 @@ h2 {
 
 h3 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 800;
-	line-height: 2.5rem;
+	line-height: 2.555rem;
 	color: #484848;
 }
 
@@ -149,7 +150,7 @@ HEADER & NAV
 
 .logo {
   text-align: center;
-  padding-top: 376px;
+  padding-top: 394px;
   transition: all .6s;
   -moz-transition: all .6s;
  /* Firefox 4 */
@@ -986,7 +987,7 @@ Responsive
   .hero {
     background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/cliff.jpg") no-repeat center fixed;
     background-size: cover;
-    height: 220px;
+    height: 210px;
     box-shadow: 0 4px 2px -2px #b5b5b5;
     overflow: hidden;
   }
@@ -994,7 +995,7 @@ Responsive
   .hero2 {
     background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/fenced.jpg") no-repeat center fixed;
     background-size: cover;
-    height: 220px;
+    height: 210px;
     box-shadow: 0 4px 2px -2px #b5b5b5;
     overflow: hidden;
   }
@@ -1002,7 +1003,7 @@ Responsive
   .hero3 {
     background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/droplets.jpg") no-repeat center fixed;
     background-size: cover;
-    height: 220px;
+    height: 210px;
     box-shadow: 0 4px 2px -2px #b5b5b5;
     overflow: hidden;
   }
@@ -1010,7 +1011,7 @@ Responsive
   .hero4 {
     background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/flare.jpg") no-repeat center fixed;
     background-size: cover;
-    height: 220px;
+    height: 210px;
     box-shadow: 0 4px 2px -2px #b5b5b5;
     overflow: hidden;
   }
@@ -1018,7 +1019,7 @@ Responsive
   .hero5 {
     background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/grass.jpg") no-repeat center fixed;
     background-size: cover;
-    height: 220px;
+    height: 210px;
     box-shadow: 0 4px 2px -2px #b5b5b5;
     overflow: hidden;
   }
@@ -1026,7 +1027,7 @@ Responsive
   .hero6 {
     background: linear-gradient(to bottom, rgba(0, 157, 255, 0), rgba(10, 28, 26, 0.64)),  url("../img/tree.jpg") no-repeat center fixed;
     background-size: cover;
-    height: 220px;
+    height: 210px;
     box-shadow: 0 4px 2px -2px #b5b5b5;
     overflow: hidden;
   }
