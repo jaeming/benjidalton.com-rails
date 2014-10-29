@@ -411,6 +411,13 @@ Blog
   padding-top: 1%;
 }
 
+.center-img {
+  text-align: center;
+	margin: 0 auto;
+	background: #1f1f1f;
+	border-radius: 10px;
+}
+
 .post-footer {
   font-size: 12px;
   font-weight: 800;
@@ -770,6 +777,8 @@ ABOUT SECTION
 /******************
 HOME SECTION
 ******************/
+
+
 
 .home-section {
   background: whitesmoke;
