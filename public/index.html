@@ -65,7 +65,11 @@
 					</p>
           <p>Well, I'm sure there are a variety of approaches you could take but my new favorite is <code>git stash</code>. Don't commit. Just stash it.  Create your new branch and then run <code>git stash apply</code>. In the process, you'll keep your master clean and create a new branch with all of your changes:
 					</p>
-         <pre><code></code></pre>
+         <pre><code>git stash
+git checkout -b late-night-delerium-branch
+git stash apply
+git add .
+git commit -m 'either crazy genius or superb foolishness'</code></pre>
           <p class="post-footer">
             - Posted on Oct. 30th, 2014
           </p>
