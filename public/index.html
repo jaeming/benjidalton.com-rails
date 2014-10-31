@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-wf-site="542e03af258b510656fdd160" data-wf-page="542e03af258b510656fdd162">
+<html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -147,21 +147,16 @@ git commit -m 'either crazy genius or superb foolishness'</code></pre>
       <div class="margin">
         <h3 class="center">Fill in the form and I'll get back to you.</h3>
       </div>
-      <!-- <div class="w-form form-margins"> -->
-      <form class="form" name="email-form" data-name="Email Form">
-        <input class="w-input field" type="text" placeholder="Your name" name="name" data-name="Name">
+      <form action="http://getsimpleform.com/messages?form_api_token=3f143ad87b45f800de4601222be5716f" method="post" class="form">
+ 
+  <input type='hidden' name='redirect_to' value='http://benjidalton.com/thanks.html' />
+          <input class="w-input field" type="text" placeholder="Your name" name="name" data-name="Name">
         <input class="w-input field" type="email" placeholder="Your email address" name="email" data-name="Email" required="required">
-        <textarea class="w-input field comments" placeholder="Message"></textarea>
+        <textarea class="w-input field comments" name="message" placeholder="Message"></textarea>
         <input class="w-button button" type="submit" value="Send Message" data-wait="Please wait...">
-      </form>
-      <div class="w-form-done success">
-        <h2>Thank you!</h2>
-        <p>Your submission has been received!</p>
+			</form>
       </div>
-      <div class="w-form-fail">
-        <p>Oops! Something went wrong while submitting the form :(</p>
-      </div>
-      <!-- </div> -->
+
     </div>
     <footer>
       <div class="margin">
@@ -218,7 +213,6 @@ git commit -m 'either crazy genius or superb foolishness'</code></pre>
       	});
       	
     </script>
-    <script type="text/javascript" src="js/webflow.js"></script>
-    <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+   
   </body>
 </html>
