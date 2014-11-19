@@ -1,19 +1,3 @@
-<header id="home">
-      <nav>
-        <div class="wow bounceInDown">
-          <a href="#">
-            <h1 class="logo animate-1" id="title">Benji Dalton</h1>
-          </a>
-        </div>
-        <h1 id="title-small">Benji Dalton</h1>
-        <ul class="nav-sm wow fadeInUp" data-wow-delay="1s">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
     <div class="home-section">
       <div class="mission-statement">
         <div class="the-icons">
@@ -78,54 +62,5 @@
         <a href="http://facebook.com/daylightsavings"><img src="img/facebook.png" alt="" class="social-icon"></a>
       </div>
     </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-       var classes = ['hero', 'hero2', 'hero3', 'hero4', 'hero5'];
-      var randomNumber = Math.floor(Math.random() * classes.length);
-       $('header').addClass(classes[randomNumber]);
-      });
 
-    </script>
-    <script src="js/animatescroll.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script type="text/javascript">
-      $(document).on("scroll",function(){
-        if($(document).scrollTop()>490){
-          $("nav").removeClass("large").addClass("small");
-          }
-        else{
-          $("nav").removeClass("small").addClass("large");
-          }
-        });
-    </script>
-    <script type="text/javascript">
-      $(document).on("scroll",function(){
-        if($(document).scrollTop()>490){
-          $("#title-small").removeClass("jumbo").addClass("mini");
-          }
-        else{
-          $("#title-small").removeClass("mini").addClass("jumbo");
-          }
-        });
-    </script>
-    <script>
-      $( document ).ready(function() {
-      new WOW().init();
-       });
-
-    </script>
-    <script>
-      $( document ).ready(function() {
-
-        setTimeout(
-          function()
-            {
-            $('#title').animatescroll({scrollSpeed:2000,easing:'easeInOutBack', element:'body',padding:-190});
-          }, 500);
-        });
-
-    </script>
-    <script type="text/javascript" src="js/webflow.js"></script>
-    <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 
