@@ -1,0 +1,18 @@
+= form_for @article do |f|
+  - if @article.errors.any?
+    .panel.callout
+      %h4
+        = pluralize(@article.errors.count, "error")
+        prohibited this article from being saved:
+      %ul
+      - @article.errors.full_messages.each do |msg|
+        %li
+          = msg
+  %p
+    = f.label :title
+    = f.text_field :title
+  %p
+    = f.label :text
+    = f.text_area :text, rows: '15'
+  %p
+    = f.button :submit.capitalize, class: "button small round"
