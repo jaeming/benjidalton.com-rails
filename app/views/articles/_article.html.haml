@@ -1,0 +1,14 @@
+%h4
+  = article.title
+%p
+  ~ markdown article.text
+%small
+  = link_to "- Posted on #{article.created_at.strftime('%B %d, %Y')}", article
+  -if current_user
+    &nbsp; / &nbsp;
+    = link_to "Edit", edit_article_path(article)
+    &nbsp; / &nbsp;
+    = link_to "Delete", article_path(article), method: :delete, data: { confirm: 'Are you sure?' }
+%br
+%br
+%br

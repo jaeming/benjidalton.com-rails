@@ -1,0 +1,10 @@
+%section
+%br
+  .row
+    .columns.medium-12.medium-centered
+      %h1.left All Articles
+      .left.new-post
+        - if current_user
+          = link_to 'New Article', new_article_path, class: 'button tiny round'
+      %hr
+      = render @articles

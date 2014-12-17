@@ -1,0 +1,49 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title= content_for?(:title) ? yield(:title) : "Benji Dalton"
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "vendor/modernizr"
+    = csrf_meta_tags
+    %link{:href => "http://fonts.googleapis.com/css?family=Karla|Signika:300,600' rel='stylesheet' type='text/css", :rel => "stylesheet", :type => "text/css"}
+  %body
+    .contain-to-grid.sticky.hide-for-small-only
+      %nav.top-bar{"data-options" => "sticky_on: large", "data-topbar" => "", :role => "navigation"}
+        %ul.title-area
+          %li.name
+            %h1
+              %a{:href => "#"} Benji Dalton
+        %section.top-bar-section
+          %ul.right
+            %li
+              = link_to 'Blog', articles_path
+            %li
+              = link_to 'About', root_path
+            %li
+              = link_to 'Portfolio', portfolio_path
+            %li
+              = link_to 'Contact', contact_path
+    .off-canvas-wrap{"data-offcanvas" => ""}
+      .inner-wrap
+        %nav.show-for-small-only.tab-bar{"data-no-turbolink" => ""}
+          %section.left.tab-bar-section
+            %h1.title.left Benji Dalton
+          %section.right-small
+            %a.right-off-canvas-toggle.menu-icon{:href => "#"}
+              %span
+        %aside.right-off-canvas-menu
+          %ul.off-canvas-list
+            %li
+              = link_to 'Home', root_path
+            %li
+              = link_to 'Blog', articles_path
+            %li
+              %a{:href => "#"} Portfolio
+            %li
+              %a{:href => "#"} Contact
+        = render 'layouts/messages'
+        = yield
+        %a.exit-off-canvas
+    = javascript_include_tag "application"

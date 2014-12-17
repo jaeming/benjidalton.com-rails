@@ -2,6 +2,24 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.4'
 
+gem 'haml'
+
+gem 'simple_form'
+
+gem "haml-rails"
+
+gem 'foundation-rails'
+
+gem 'unicorn'
+
+gem 'devise'
+
+gem 'redcarpet'
+
+gem 'albino'
+
+gem 'nokogiri'
+
 ### OpenShift Online changes:
 
 # Fix the conflict with the system 'rake':

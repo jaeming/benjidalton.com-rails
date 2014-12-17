@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require foundation_and_overrides
+ *= require_tree .
+ */
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+.about {
+  margin-top: 50px;
+}
+
+.profile-more {
+  margin-top: 50px;
+  background: whitesmoke;
+  padding: 20px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-photo {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.field_with_errors {
+  background: tomato;
+}
+
+code, samp, kbd {
+  font-family: "Courier New", Courier, monospace, sans-serif;
+  text-align: left;
+  color: #fdffed;
+  }
+pre code {
+  color: #fdffed;
+  line-height: 1.6em;
+  font-size: 14px;
+  background: transparent;
+  border: 0px;
+  margin: 0;
+  padding: 0;
+  }
+pre {
+  color: #fdffed;
+  padding: 0.1em 0.5em 0.3em 0.8em;
+  border: 20px solid #3d3d3d;
+  background: #3d3d3d;
+  margin: 1.7em 1em 1.7em 0em;
+  overflow: auto;
+  width: 600px;
+  border-radius: 9px;
+
+  }
+/* target IE7 and IE6 */
+*:first-child+html pre {
+  padding-bottom: 2em;
+  overflow-y: hidden;
+  overflow: visible;
+  overflow-x: auto;
+  }
+* html pre {
+  padding-bottom: 2em;
+  overflow: visible;
+  overflow-x: auto;
+  }
+
+.line-numbers {
+  padding-right: 12px;
+}
+
+
+

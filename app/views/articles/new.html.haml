@@ -1,0 +1,8 @@
+.row
+  .columns.medium-7
+    %br
+    - if current_user
+      %h1 New Post
+      = render 'form'
+    - else
+      %p Sign in first
