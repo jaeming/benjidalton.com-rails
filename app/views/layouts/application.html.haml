@@ -14,7 +14,7 @@
         %ul.title-area
           %li.name
             %h1
-              %a{:href => "#"} Benji Dalton
+              = link_to 'Benji Dalton', root_path
         %section.top-bar-section
           %ul.right
             %li
@@ -29,20 +29,21 @@
       .inner-wrap
         %nav.show-for-small-only.tab-bar{"data-no-turbolink" => ""}
           %section.left.tab-bar-section
-            %h1.title.left Benji Dalton
+            %h1.title.left
+              = link_to 'Benji Dalton', root_path
           %section.right-small
             %a.right-off-canvas-toggle.menu-icon{:href => "#"}
               %span
         %aside.right-off-canvas-menu
           %ul.off-canvas-list
             %li
-              = link_to 'Home', root_path
+              = link_to 'About', root_path
             %li
               = link_to 'Blog', articles_path
             %li
-              %a{:href => "#"} Portfolio
+              = link_to 'Portfolio', portfolio_path
             %li
-              %a{:href => "#"} Contact
+              = link_to 'Contact', contact_path
         = render 'layouts/messages'
         = yield
         %a.exit-off-canvas

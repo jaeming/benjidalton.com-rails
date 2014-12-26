@@ -64,7 +64,7 @@ pre {
   background: #3d3d3d;
   margin: 1.7em 1em 1.7em 0em;
   overflow: auto;
-  width: 600px;
+  max-width: 600px;
   border-radius: 9px;
 
   }
@@ -83,6 +83,10 @@ pre {
 
 .line-numbers {
   padding-right: 12px;
+}
+
+h1.title.left a{
+  color: whitesmoke;
 }
 
 

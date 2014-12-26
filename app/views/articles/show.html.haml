@@ -9,7 +9,7 @@
       %small
         = link_to "- Posted on #{@article.created_at.strftime('%B %d, %Y')}", @article
       %hr
-      = link_to 'Back', articles_path, class: 'button round tiny edit-button'
+      = link_to 'All Posts', articles_path, class: 'button round tiny edit-button'
       - if current_user
         = link_to 'Edit', edit_article_path(@article), class: 'button small alert round tiny edit-button'
 

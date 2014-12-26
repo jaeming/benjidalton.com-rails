@@ -1,1 +1,12 @@
-%h1 Hello There
+.row
+  .columns.medium-6
+    %h1 Contact
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel consequatur quod reprehenderit ratione ut, eos, eligendi expedita esse porro voluptas quia, sapiente corporis officia, adipisci officiis obcaecati alias. Minus, doloribus?
+  .columns.medium-6.side-badge
+    %h2 Get in touch
+    %form.form{:action => "http://getsimpleform.com/messages?form_api_token=3f143ad87b45f800de4601222be5716f", :method => "post"}
+      %input{:name => "redirect_to", :type => "hidden", :value => "http://benjidalton.com/thanks.html"}/
+      %input.w-input.field{"data-name" => "Name", :name => "name", :placeholder => "Your name", :type => "text"}/
+      %input.w-input.field{"data-name" => "Email", :name => "email", :placeholder => "Your email address", :required => "required", :type => "email"}/
+      %textarea.w-input.field.comments{:name => "message", :placeholder => "Message"}
+      %input.w-button.button{"data-wait" => "Please wait...", :type => "submit", :value => "Send Message"}/
