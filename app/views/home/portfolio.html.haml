@@ -1,1 +1,16 @@
-%h2 yo portfolio
+= javascript_include_tag "./badges.js"
+.row
+  .columns.medium-7
+    %h2 Portfolio
+    %p
+      Check out my github
+      = succeed "." do
+        %a{:href => "https://osrc.dfm.io/jaeming/", :target => "_blank"} report card
+  .columns.medium-5.side-badge
+    %h4.text-center Treehouse Badges
+    %hr
+    #widget
+      .container
+        #badges
+    %h4.text-center CodeSchool Badges
+    %hr
