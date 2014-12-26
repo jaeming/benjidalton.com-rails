@@ -1,10 +1,18 @@
 %section
 %br
   .row
-    .columns.medium-12.medium-centered
-      %h1.left All Articles
+    .columns.medium-8
+      %h1.left Blog
       .left.new-post
         - if current_user
           = link_to 'New Article', new_article_path, class: 'button tiny round'
       %hr
       = render @articles
+    .columns.medium-4.side-badge
+      %h2 Archives
+      - @articles.each do |article|
+        %p
+          = link_to article.title, article_path(article.id)
+          %small
+            = article.created_at.strftime("%B %e, %Y")
+
