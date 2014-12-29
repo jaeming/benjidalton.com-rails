@@ -1,16 +1,65 @@
 = javascript_include_tag "./badges.js"
 .row
   .columns.medium-7
-    %h2 Portfolio
-    %p
-      Check out my github
-      = succeed "." do
-        %a{:href => "https://osrc.dfm.io/jaeming/", :target => "_blank"} report card
+    %h1 Portfolio
+
   .columns.medium-5.side-badge
-    %h4.text-center Treehouse Badges
-    %hr
+    %h2.text-center Achievements
+    %hr/
+    %h3.text-center
+      I'm currently enrolled at
+      %a{:href => "http://bloc.io"}
+        Bloc.io
+    %hr/
+    %h3.text-center CodeSchool Badges:
+    %span.hint.hint--left{"data-hint" => "Javascript Road Trip"}
+      = image_tag "completed-javascript-road-trip-part-1.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Level 1: Javascript Road Trip"}
+      = image_tag "level-1-on-javascript-road-trip-part-1.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Level 2: Javascript Road Trip"}
+      = image_tag "level-2-on-javascript-road-trip-part-1.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Level 3: Javascript Road Trip"}
+      = image_tag "level-3-on-javascript-road-trip-part-1.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "CSS Cross Country"}
+      = image_tag "completed-css-cross-country.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Level 1: CSS Cross Country"}
+      = image_tag "level-1-on-css-cross-country.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Level 2: CSS Cross Country"}
+      = image_tag "level-2-on-css-cross-country.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Try Ruby"}
+      = image_tag "completed-try-ruby.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Ruby Bits"}
+      = image_tag "completed-ruby-bits.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Level 1: Ruby Bits"}
+      = image_tag "level-1-on-ruby-bits.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Warming up with Ember"}
+      = image_tag "completed-warming-up-with-ember-js.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Level 1: Warming up with Ember"}
+      = image_tag "level-1-on-warming-up-with-ember-js.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Level 2: Warming up with Ember"}
+      = image_tag "level-2-on-warming-up-with-ember-js.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Rails for Zombies Redux"}
+      = image_tag "completed-rails-for-zombies-redux.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Level 1: Rails for Zombies"}
+      = image_tag "level-1-on-rails-for-zombies-redux.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Level 2: Rails for Zombies"}
+      = image_tag "level-2-on-rails-for-zombies-redux.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Level 3: Rails for Zombies"}
+      = image_tag "level-3-on-rails-for-zombies-redux.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Level 4: Rails for Zombies"}
+      = image_tag "level-4-on-rails-for-zombies-redux.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Surviving APIs with Rails"}
+      = image_tag "completed-surviving-apis-with-rails.png", class: 'code-badge'
+    %span.hint.hint--left{"data-hint" => "Level 1: Surviving APIs with Rails"}
+      = image_tag "level-1-on-surviving-apis-with-rails.png", class: 'code-badge'
+    %hr/
+    %h3.text-center Treehouse Badges:
     #widget
       .container
         #badges
-    %h4.text-center CodeSchool Badges
-    %hr
+    %hr/
+    %p
+      Check out my github
+      = succeed "." do
+        %a{:href => "https://osrc.dfm.io/jaeming/#events", :target => "_blank"} report card
+    %hr/

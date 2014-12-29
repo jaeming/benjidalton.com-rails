@@ -16,6 +16,8 @@
  */
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
+
+
 .about {
   margin-top: 50px;
 }
@@ -88,6 +90,10 @@ pre {
 h1.title.left a{
   color: whitesmoke;
 }
+.top-bar-section li:not(.has-form) a:not(.button) {
+  height: 45px;
+}
+
 
 
 

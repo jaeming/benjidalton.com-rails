@@ -17,13 +17,13 @@
               = link_to 'Benji Dalton', root_path
         %section.top-bar-section
           %ul.right
-            %li
-              = link_to 'About', root_path
-            %li
+            %li#about
+              = link_to 'About', about_path
+            %li#articles
               = link_to 'Blog', articles_path
-            %li
+            %li#portfolio
               = link_to 'Portfolio', portfolio_path
-            %li
+            %li#contact
               = link_to 'Contact', contact_path
     .off-canvas-wrap{"data-offcanvas" => ""}
       .inner-wrap
