@@ -2,56 +2,93 @@
 .row
   .columns.medium-7
     %h1 Portfolio
-
+    .portfolio-container
+      %h3
+        Grasshopper Boards
+        %small Ruby on Rails / Angular.js
+      %a{:href => "https://github.com/jaeming/grasshopper"}
+        = image_tag "grasshopper.png", class: "portfolio"
+      .description-container
+        %small.description Grasshopper is a simple, open message-board API. I used this project to experiment with the ins and outs of writing an API in Rails and then followed it up with coding a front-end in Angular.js.
+      %h3
+        Codeca
+        %small Ruby on Rails
+      %a{:href => "https://github.com/jaeming/SocialDev"}
+        = image_tag "codeca.png", class: "portfolio"
+      .description-container
+        %small.description Built with Ruby on Rails as a social coding platform with reddit-like implementations. It features posts with voting, commenting, image uploading, and built-in markdown formatting.
+      %h3
+        Simple Task
+        %small Ruby on Rails / jQuery
+      %a{:href => "https://github.com/jaeming/simple-app"}
+        = image_tag "simple.png", class: "portfolio"
+      .description-container
+        %small.description A TODO app which self-destructs tasks older than 7 days. Simple Task was built with Rails 4 and uses AJAX extensively to provide a more seemless user experience.
+      %h3 front-end experiments:
+      <p data-height="706" data-theme-id="0" data-slug-hash="Cctav" data-default-tab="result" data-user="jaeming" class='codepen'>See the Pen <a href='http://codepen.io/jaeming/pen/Cctav/'>Pure CSS Icons</a> by Benjamin Dalton (<a href='http://codepen.io/jaeming'>@jaeming</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+      %br
+      <p data-height="670" data-theme-id="0" data-slug-hash="JobdEd" data-default-tab="result" data-user="jaeming" class='codepen'>See the Pen <a href='http://codepen.io/jaeming/pen/JobdEd/'>Pop-up with blurred background animation</a> by Benjamin Dalton (<a href='http://codepen.io/jaeming'>@jaeming</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+      %br/
+      <p data-height="566" data-theme-id="0" data-slug-hash="EaPWXV" data-default-tab="result" data-user="jaeming" class='codepen'>See the Pen <a href='http://codepen.io/jaeming/pen/EaPWXV/'>Tabs with Angular js</a> by Benjamin Dalton (<a href='http://codepen.io/jaeming'>@jaeming</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+      %br/
+      <p data-height="615" data-theme-id="0" data-slug-hash="szqDa" data-default-tab="result" data-user="jaeming" class='codepen'>See the Pen <a href='http://codepen.io/jaeming/pen/szqDa/'>3d CSS balls</a> by Benjamin Dalton (<a href='http://codepen.io/jaeming'>@jaeming</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+      %br/
+      <p data-height="543" data-theme-id="0" data-slug-hash="lvaHD" data-default-tab="result" data-user="jaeming" class='codepen'>See the Pen <a href='http://codepen.io/jaeming/pen/lvaHD/'>lvaHD</a> by Benjamin Dalton (<a href='http://codepen.io/jaeming'>@jaeming</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
   .columns.medium-5.side-badge
     %h2.text-center Achievements
     %hr/
     %h3.text-center
-      I'm currently enrolled at
+      I'm currently enrolled in the full-stack apprenticeship at
       %a{:href => "http://bloc.io"}
         Bloc.io
     %hr/
-    %h3.text-center CodeSchool Badges:
-    %span.hint.hint--left{"data-hint" => "Javascript Road Trip"}
-      = image_tag "completed-javascript-road-trip-part-1.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Level 1: Javascript Road Trip"}
-      = image_tag "level-1-on-javascript-road-trip-part-1.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Level 2: Javascript Road Trip"}
-      = image_tag "level-2-on-javascript-road-trip-part-1.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Level 3: Javascript Road Trip"}
-      = image_tag "level-3-on-javascript-road-trip-part-1.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "CSS Cross Country"}
-      = image_tag "completed-css-cross-country.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Level 1: CSS Cross Country"}
-      = image_tag "level-1-on-css-cross-country.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Level 2: CSS Cross Country"}
-      = image_tag "level-2-on-css-cross-country.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Try Ruby"}
-      = image_tag "completed-try-ruby.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Ruby Bits"}
-      = image_tag "completed-ruby-bits.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Level 1: Ruby Bits"}
-      = image_tag "level-1-on-ruby-bits.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Warming up with Ember"}
-      = image_tag "completed-warming-up-with-ember-js.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Level 1: Warming up with Ember"}
-      = image_tag "level-1-on-warming-up-with-ember-js.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Level 2: Warming up with Ember"}
-      = image_tag "level-2-on-warming-up-with-ember-js.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Rails for Zombies Redux"}
-      = image_tag "completed-rails-for-zombies-redux.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Level 1: Rails for Zombies"}
-      = image_tag "level-1-on-rails-for-zombies-redux.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Level 2: Rails for Zombies"}
-      = image_tag "level-2-on-rails-for-zombies-redux.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Level 3: Rails for Zombies"}
-      = image_tag "level-3-on-rails-for-zombies-redux.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Level 4: Rails for Zombies"}
-      = image_tag "level-4-on-rails-for-zombies-redux.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Surviving APIs with Rails"}
-      = image_tag "completed-surviving-apis-with-rails.png", class: 'code-badge'
-    %span.hint.hint--left{"data-hint" => "Level 1: Surviving APIs with Rails"}
-      = image_tag "level-1-on-surviving-apis-with-rails.png", class: 'code-badge'
+    .center
+      %h3.text-center CodeSchool Badges:
+      %span.hint.hint--left{"data-hint" => "Javascript Road Trip"}
+        = image_tag "completed-javascript-road-trip-part-1.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Level 1: Javascript Road Trip"}
+        = image_tag "level-1-on-javascript-road-trip-part-1.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Level 2: Javascript Road Trip"}
+        = image_tag "level-2-on-javascript-road-trip-part-1.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Level 3: Javascript Road Trip"}
+        = image_tag "level-3-on-javascript-road-trip-part-1.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "CSS Cross Country"}
+        = image_tag "completed-css-cross-country.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Level 1: CSS Cross Country"}
+        = image_tag "level-1-on-css-cross-country.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Level 2: CSS Cross Country"}
+        = image_tag "level-2-on-css-cross-country.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Ruby path: Try Ruby"}
+        = image_tag "completed-try-ruby.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Ruby path: Ruby Bits"}
+        = image_tag "completed-ruby-bits.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Level 1: Ruby Bits"}
+        = image_tag "level-1-on-ruby-bits.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Warming up with Ember"}
+        = image_tag "completed-warming-up-with-ember-js.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Level 1: Warming up with Ember"}
+        = image_tag "level-1-on-warming-up-with-ember-js.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Level 2: Warming up with Ember"}
+        = image_tag "level-2-on-warming-up-with-ember-js.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Rails for Zombies Redux"}
+        = image_tag "completed-rails-for-zombies-redux.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Level 1: Rails for Zombies"}
+        = image_tag "level-1-on-rails-for-zombies-redux.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Level 2: Rails for Zombies"}
+        = image_tag "level-2-on-rails-for-zombies-redux.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Level 3: Rails for Zombies"}
+        = image_tag "level-3-on-rails-for-zombies-redux.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Level 4: Rails for Zombies"}
+        = image_tag "level-4-on-rails-for-zombies-redux.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Surviving APIs with Rails"}
+        = image_tag "completed-surviving-apis-with-rails.png", class: 'code-badge'
+      %span.hint.hint--left{"data-hint" => "Level 1: Surviving APIs with Rails"}
+        = image_tag "level-1-on-surviving-apis-with-rails.png", class: 'code-badge'
     %hr/
     %h3.text-center Treehouse Badges:
     #widget

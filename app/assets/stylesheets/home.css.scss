@@ -81,23 +81,88 @@ h4 {
   margin-top: 15px;
 }
 
+.accounts {
+  text-align: center;
+  width: 600px;
+  padding-top: 130px;
+}
+
+.accounts a {
+  display: inline-block;
+}
+
+.accounts p {
+  margin-top: 10px;
+}
+
+.accounts a:hover {
+  display: inline-block;
+}
+
+.accounts a img:hover {
+  -webkit-animation: grow 300ms forwards;
+  animation: grow 300ms forwards;
+}
+
+.account-img-links {
+  width: 50px;
+}
+
+.portfolio-container h3 {
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+
+.portfolio {
+  width: 350px;
+  height: auto;
+  transition: all 400ms ease;
+}
+
+.portfolio:hover {
+  width: 400px;
+  height: auto;
+  margin-left: 0px;
+}
+
+.description {
+  color: #666;
+  font-size: 14px;
+  // margin: 0 auto;
+}
+
+.description-container {
+  max-width: 350px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
 //////////// BADGES START
+.center {
+  margin: 0;
+  text-align: center;
+
+}
 
 #widget {
 
   li,ul,img {
     margin: 0;
-    padding: 0;
   }
 
   .container {
-
     margin-top: 15px;
     padding: 20px;
-
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  #badges { width: 400px; margin: 0;}
+  #badges {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+  }
 
   .container li:nth-child(6n + 4) {
     margin-left: 55px;
@@ -145,7 +210,6 @@ h4 {
   z-index: 2;
   -webkit-animation: grow 500ms forwards;
           animation: grow 500ms forwards;
-  /*transform: scale(1.5);*/
 }
 
 @-webkit-keyframes grow {
@@ -178,8 +242,8 @@ h4 {
   z-index: 1;
 }
 .code-badge:hover {
-  animation: grow 300ms forwards;
-  -webkit-animation: grow 300ms forwards;
+  animation: grow 400ms forwards;
+  -webkit-animation: grow 400ms forwards;
   z-index: 11;
 }
 .hint { position: relative; display: inline-block; }
@@ -199,7 +263,8 @@ h4 {
 }
 
 .hint:after {
-  top: 104px;
+  top: 124px;
+  left: 0px;
   content: attr(data-hint);
   text-align: center;
   background: rgba(0, 0, 0, 1);
