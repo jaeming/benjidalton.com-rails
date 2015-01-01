@@ -11,8 +11,9 @@
     .columns.medium-4.side-badge
       %h2 Archives
       - @articles.each do |article|
-        %p
+        %small.description
           = link_to article.title, article_path(article.id)
-          %small
-            = article.created_at.strftime("%B %e, %Y")
+        %small
+          = article.created_at.strftime("%B %e, %Y")
+        %br/
 

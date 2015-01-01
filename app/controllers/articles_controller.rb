@@ -40,7 +40,7 @@ class ArticlesController < ApplicationController
   end
 
   def index
-    @articles = Article.all
+    @articles = Article.order("id DESC").all
   end
 
   private
