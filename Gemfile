@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.4'
 
+gem 'pg'
+
 gem 'haml'
 
 gem 'simple_form'
@@ -23,7 +25,8 @@ gem 'redcarpet'
 ### OpenShift Online changes:
 
 # Fix the conflict with the system 'rake':
-gem 'rake', '~> 0.9.6'
+gem 'rails_12factor', group: :production
+
 
 # Support for databases and environment.
 # Use 'sqlite3' for testing and development and mysql and postgresql
@@ -42,9 +45,9 @@ group :development, :test do
 end
 
 # Add support for the MySQL
-group :production, :mysql do
-  gem 'mysql2'
-end
+# group :production, :mysql do
+#   gem 'mysql2'
+# end
 
 # group :production, :postgresql do
 #   gem 'pg'
@@ -68,9 +71,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
-group :doc do
-  gem 'sdoc', '~> 0.4.0'
-end
+
+gem 'sdoc', '~> 0.4.0'
+
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 
