@@ -10,10 +10,10 @@
       = render @articles
     .columns.medium-4.side-badge
       %h2 Archives
-      - @articles.each do |article|
-        %small.description
-          = link_to article.title, article_path(article.id)
-        %small
-          = article.created_at.strftime("%B %e, %Y")
-        %br/
+      - @article_months.sort.reverse.each do |month, articles|
+        %small.archives
+          = h month.strftime("%B %Y")
+        - for article in articles
+          %small.archive-post
+            =h link_to article.title, article_path(article)
 

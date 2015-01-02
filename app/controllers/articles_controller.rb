@@ -41,6 +41,7 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.order("id DESC").all
+    @article_months = Article.all.group_by { |post| post.created_at.beginning_of_month}
   end
 
   private
