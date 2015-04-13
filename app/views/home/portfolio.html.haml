@@ -4,19 +4,35 @@
     %h1 Portfolio
     .portfolio-container
       %h3
+        Bluebird Feeder
+        %small Ruby on Rails / EmberJS
+      %a{:href => "https://github.com/jaeming/birdfeeder"}
+        = image_tag "bluebirdspace.png", class: "portfolio"
+      .description-container
+        %small.description Bluebird feeder is a RSS reader with emphasis on content discovery, providing a user with a default subscription to feed collections which can then be customized. It features the ability to add or find feeds by url, and refresh collections with updated feeds. Deployed using capistrano to a digital ocean vps, it can be found live at
+        %a{:href => "https://bluebird.space"}
+          bluebird.space
+      %h3
+        Bookclipper
+        %small Ruby on Rails / EmberJS
+      %a{:href => "https://github.com/jaeming/bookclipper"}
+        = image_tag "bookclipper.png", class: "portfolio"
+      .description-container
+        %small.description Bookclipper is a social bookmarking site built with Rails as an API and using Ember-cli for the front-end. It also features oauth sign-up/sign-in integration with Twitter.
+      %h3
         Grasshopper Boards
-        %small Ruby on Rails / Angular.js
+        %small Ruby on Rails / AngularJS
       %a{:href => "https://github.com/jaeming/grasshopper"}
         = image_tag "grasshopper.png", class: "portfolio"
       .description-container
-        %small.description Grasshopper is a simple, open message-board API. I used this project to experiment with the ins and outs of writing an API in Rails and then followed it up with coding a front-end in Angular.js.
+        %small.description Grasshopper is a simple, open message-board API. I used this project to experiment with the ins and outs of writing an API in Rails and then followed it up with coding a front-end in Angular.js. It includes elastic search integration and token-based authentication from scratch.
       %h3
         Codeca
         %small Ruby on Rails
       %a{:href => "https://github.com/jaeming/SocialDev"}
         = image_tag "codeca.png", class: "portfolio"
       .description-container
-        %small.description Built with Ruby on Rails as a social coding platform with reddit-like implementations. It features posts with voting, commenting, image uploading, and built-in markdown formatting.
+        %small.description Built with Ruby on Rails as a social coding platform with reddit-like implementations. It features posts with voting, commenting, image uploading, built-in markdown formatting, and infinite scroll integration with pagination.
       %h3
         Simple Task
         %small Ruby on Rails / jQuery
@@ -36,14 +52,11 @@
       %br/
       <p data-height="615" data-theme-id="0" data-slug-hash="szqDa" data-default-tab="result" data-user="jaeming" class='codepen'>See the Pen <a href='http://codepen.io/jaeming/pen/szqDa/'>3d CSS balls</a> by Benjamin Dalton (<a href='http://codepen.io/jaeming'>@jaeming</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
       <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-      %br/
-      <p data-height="543" data-theme-id="0" data-slug-hash="lvaHD" data-default-tab="result" data-user="jaeming" class='codepen'>See the Pen <a href='http://codepen.io/jaeming/pen/lvaHD/'>lvaHD</a> by Benjamin Dalton (<a href='http://codepen.io/jaeming'>@jaeming</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
   .columns.medium-5.side-badge
     %h2.text-center Achievements
     %hr/
     %h3.text-center
-      I'm currently enrolled in the full-stack apprenticeship at
+      Bloc certified as a full-stack apprentice:
       %a{:href => "http://bloc.io"}
         Bloc.io
     %hr/
