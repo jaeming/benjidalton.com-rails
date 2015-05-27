@@ -8,4 +8,9 @@ Rails.application.routes.draw do
 
   resources :articles
 
+  namespace :api do
+    resources :articles
+    get 'recent_posts' => 'articles#recent', as: :recent_posts
+  end
+
 end
