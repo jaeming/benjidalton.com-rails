@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+  $('.mobile-menu-dismiss').hide();
+
   $('nav a, header a').on('click', function() {
       var scrollAnchor = $(this).attr('data-scroll'),
           scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 28;
@@ -6,7 +8,20 @@ $( document ).ready(function() {
           scrollTop: scrollPoint
       }, 500);
       return false;
-  })
+  });
+
+  $('.mobile-menu').click(function() {
+    $('.sidebar').addClass('mobile-nav-showing');
+    $('.mobile-menu').fadeOut();
+    $('.mobile-menu-dismiss').fadeIn();
+  });
+
+  $('.mobile-menu-dismiss, .sidebar, main, .menu a').click(function() {
+    console.log('clicked');
+    $('.sidebar').removeClass('mobile-nav-showing');
+    $('.mobile-menu').fadeIn();
+    $('.mobile-menu-dismiss').fadeOut();
+  });
 
   $(window).scroll(function() {
       var windscroll = $(window).scrollTop();

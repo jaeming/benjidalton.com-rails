@@ -24,6 +24,10 @@ a:hover {
   color: #419139;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 /*TYPOGRAPHY*/
 
 body {
@@ -436,3 +440,89 @@ box-shadow: 2px 9px 50px 4px rgba(0,0,0,0.17);*/
 .card:hover {
   -webkit-transform: rotateY(-.5turn);
 }
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 804px) {
+
+  .mobile-menu {
+    z-index: 1001;
+    display: inline;
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    color: #fff;
+    background: rgba(90, 155, 100, .7);
+    padding-left: .5rem;
+    padding-right: .5rem;
+    cursor: pointer;
+  }
+
+  .mobile-menu-dismiss {
+    z-index: 1001;
+    display: inline;
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    color: #fff;
+    background: #5A5A5A;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    cursor: pointer;
+  }
+
+  .sidebar {
+    z-index: 1000;
+    width: 40%;
+    margin-left: -100%;
+    transition: all 400ms ease-in;
+  }
+
+  .sidebar span {
+    font-size: 1rem;
+  }
+
+  .sidebar small {
+    font-size: .6rem;
+    top: 6.6rem;
+  }
+
+  .mobile-nav-showing {
+    margin-left: 0;
+  }
+
+  header h1 {
+    font-size: 160%;
+  }
+
+  header .button {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 5rem;
+    height: 8rem;
+  }
+
+  main {
+    margin-left: 0;
+    padding: 2%;
+  }
+
+  form {
+  max-width: 90%;
+  }
+
+  input, textarea {
+    width: 90%;
+  }
+
+  footer {
+    margin-left: 0;
+  }
+
+  .social-icons {
+    display: none;
+  }
