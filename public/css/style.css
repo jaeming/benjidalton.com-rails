@@ -28,6 +28,10 @@ a:hover {
   display: none;
 }
 
+.mobile-menu-dismiss {
+  display: none;
+}
+
 /*TYPOGRAPHY*/
 
 body {
@@ -459,8 +463,8 @@ box-shadow: 2px 9px 50px 4px rgba(0,0,0,0.17);*/
   }
 
   .mobile-menu-dismiss {
+    display: none;
     z-index: 1001;
-    display: inline;
     position: fixed;
     left: 1rem;
     top: 1rem;
@@ -469,6 +473,14 @@ box-shadow: 2px 9px 50px 4px rgba(0,0,0,0.17);*/
     padding-left: .5rem;
     padding-right: .5rem;
     cursor: pointer;
+  }
+
+  .mobile-menu-dismiss-show {
+    display: inline;
+  }
+
+  .mobile-menu-hide {
+    display: none;
   }
 
   .sidebar {

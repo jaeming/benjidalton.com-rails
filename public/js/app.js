@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-  $('.mobile-menu-dismiss').hide();
 
   $('nav a, header a').on('click', function() {
       var scrollAnchor = $(this).attr('data-scroll'),
@@ -12,15 +11,15 @@ $( document ).ready(function() {
 
   $('.mobile-menu').click(function() {
     $('.sidebar').addClass('mobile-nav-showing');
-    $('.mobile-menu').fadeOut();
-    $('.mobile-menu-dismiss').fadeIn();
+    $('.mobile-menu').addClass('mobile-menu-hide');
+    $('.mobile-menu-dismiss').addClass('mobile-menu-dismiss-show');
   });
 
   $('.mobile-menu-dismiss, .sidebar, main, .menu a').click(function() {
     console.log('clicked');
     $('.sidebar').removeClass('mobile-nav-showing');
-    $('.mobile-menu').fadeIn();
-    $('.mobile-menu-dismiss').fadeOut();
+    $('.mobile-menu').removeClass('mobile-menu-hide');
+    $('.mobile-menu-dismiss').removeClass('mobile-menu-dismiss-show');
   });
 
   $(window).scroll(function() {
