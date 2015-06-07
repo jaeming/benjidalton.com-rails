@@ -503,6 +503,10 @@ box-shadow: 2px 9px 50px 4px rgba(0,0,0,0.17);*/
     margin-left: 0;
   }
 
+  .portfolio-grid {
+    text-align: center;
+  }
+
   header h1 {
     font-size: 160%;
   }
