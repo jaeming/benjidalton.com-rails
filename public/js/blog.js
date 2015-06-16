@@ -16,6 +16,3 @@ function closePost(id) {
   $('.container').removeClass('blur-background');
   $('.overlay').remove();
 };
-
-
-

@@ -542,3 +542,23 @@ box-shadow: 2px 9px 50px 4px rgba(0,0,0,0.17);*/
   .social-icons {
     display: none;
   }
+
+  .close-button {
+    top: 3.1rem;
+    left: 8%;
+    padding: 1.5px 7px;
+  }
+
+  .close-button:hover span {
+    margin-left: 5px;
+    top: 3.25rem;
+    left: 15%;
+    padding: .3rem;
+  }
+
+  .post-title {
+    margin-top: 5%;
+    font-size: 1.2rem;
+    color: #6D6D6D;
+  }
+}
