@@ -1,8 +1,11 @@
 /*GENERAL*/
 
 section {
-  padding: 1rem;
+  padding: 2rem;
   margin-bottom: 1rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main {
@@ -11,7 +14,6 @@ main {
 }
 
 main, header, footer {
-  margin-left: 20%;
   background: #F7F7F7;
 }
 
@@ -100,9 +102,9 @@ header h4 {
 
 .sidebar {
   position: fixed;
-  background: #272a2b;
+  background: rgba(0, 0, 0, 0.78);
   height: 100%;
-  width: 20%;
+  width: 17rem;
   margin-right: 2.5%;
 }
 
@@ -157,7 +159,126 @@ header h4 {
   opacity: 1;
 }
 
-/*MENU*/
+
+/* Menu Toggle*/
+
+.mobile-menu {
+  font-size: 1.2rem;
+  z-index: 1001;
+  display: inline;
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  color: #fff;
+  background: rgba(90, 155, 100, .7);
+  padding-left: .5rem;
+  padding-right: .5rem;
+  cursor: pointer;
+}
+
+.mobile-menu-dismiss {
+  font-size: 1.2rem;
+  display: none;
+  z-index: 1001;
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  color: #fff;
+  background: #5A5A5A;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  cursor: pointer;
+}
+
+.mobile-menu-dismiss-show {
+  display: inline;
+}
+
+.mobile-menu-hide {
+  display: none;
+}
+
+.sidebar {
+  z-index: 1000;
+  width: 18rem;
+  margin-left: -100%;
+  transition: all 400ms ease-in;
+}
+
+.sidebar span {
+  font-size: 1rem;
+}
+
+.sidebar small {
+  font-size: .6rem;
+  top: 6.6rem;
+}
+
+.mobile-nav-showing {
+  margin-left: 0;
+}
+
+.portfolio-grid {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/*Menu nav*/
+
+.logo {
+  z-index: 2000;
+  opacity: .9 !important;
+  position: absolute;
+  top: 1.05rem;
+  left: 1.7rem;
+  width: 1.4rem !important;
+  border-radius: 100%;
+  transition: all ease 333ms;
+}
+
+.logo:hover {
+  border-radius: 0%;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+.awesome-developer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  display: inline;
+  position: absolute;
+  left: 3.8rem;
+  top: 1rem;
+  color: rgba(213, 218, 212, 0.97);
+}
+
+.top-menu-items {
+  position: absolute;
+  right: 3.8rem;
+  top: 1rem;
+}
+
+.top-menu-items .active{
+  background: transparent;
+}
+
+.top-menu-items li {
+  padding: 0 .5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: inherit;
+  display: inline;
+}
+
+.top-menu-items a {
+  color: rgba(213, 218, 212, 0.97);
+}
+
+.top-menu-items a:hover {
+  color: #fff;
+}
 
 nav span {
   font-size: 1.4rem;
@@ -191,7 +312,7 @@ nav span {
 }
 
 .active {
-  background: #1D1D1D;
+  background: rgba(68, 68, 68, 0.44);
   opacity: 1;
 }
 
