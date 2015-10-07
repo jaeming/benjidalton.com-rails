@@ -1,4 +1,7 @@
 class Article < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :title, use: :slugged
+  after_create :title_safe_slugs
   before_save :convert_to_html
   validates :title, presence: true,
                     length: {minimum: 5}
@@ -8,6 +11,11 @@ class Article < ActiveRecord::Base
   def convert_to_html
     html = markdown(self.text)
     self.text = html
+  end
+
+  def title_safe_slugs
+    self.slug = self.title
+    self.save
   end
 
   private

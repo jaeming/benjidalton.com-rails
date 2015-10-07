@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.4'
 
+gem 'friendly_id', '~> 5.1.0'
+
 gem 'pg'
 
 gem 'haml'
