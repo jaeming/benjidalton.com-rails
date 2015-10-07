@@ -14,7 +14,7 @@ class Article < ActiveRecord::Base
   end
 
   def title_safe_slugs
-    self.slug = self.title
+    self.slug = self.title.parameterize
     self.save
   end
 

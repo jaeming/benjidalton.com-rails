@@ -3,3 +3,4 @@ class AddSlugToArticles < ActiveRecord::Migration
     add_column :articles, :slug, :string
   end
 end
+
