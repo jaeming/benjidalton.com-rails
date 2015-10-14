@@ -18,5 +18,4 @@ $(function(){ $(document).foundation()});
 
 var path = $(location).attr('pathname');
 var page = path.split('/')[1] || 'about'
-if page
 $( "#" + page ).addClass( "active" );
