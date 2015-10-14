@@ -48,3 +48,7 @@
         = yield
         %a.exit-off-canvas
     = javascript_include_tag "application"
+    :javascript
+      if (window.location.hash === "#portfolio") {
+        window.location = '/portfolio'
+      }
