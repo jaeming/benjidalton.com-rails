@@ -12,9 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require foundation
 //= require_tree .
-$(function(){ $(document).foundation()});
 
 var path = $(location).attr('pathname');
 var page = path.split('/')[1] || 'about'

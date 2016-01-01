@@ -7,48 +7,6 @@
     = stylesheet_link_tag    "application"
     = javascript_include_tag "vendor/modernizr"
     = csrf_meta_tags
-    %link{:href => "http://fonts.googleapis.com/css?family=Karla|Signika:300,600' rel='stylesheet' type='text/css", :rel => "stylesheet", :type => "text/css"}
-  %body
-    .contain-to-grid.sticky.hide-for-small-only
-      %nav.top-bar{"data-options" => "sticky_on: large", "data-topbar" => "", :role => "navigation"}
-        %ul.title-area
-          %li.name
-            %h1
-              = link_to 'Benji Dalton', root_path
-        %section.top-bar-section
-          %ul.right
-            %li#about
-              = link_to 'About', about_path
-            %li#articles
-              = link_to 'Blog', articles_path
-            %li#portfolio
-              = link_to 'Portfolio', portfolio_path
-            %li#contact
-              = link_to 'Contact', contact_path
-    .off-canvas-wrap{"data-offcanvas" => ""}
-      .inner-wrap
-        %nav.show-for-small-only.tab-bar{"data-no-turbolink" => ""}
-          %section.left.tab-bar-section
-            %h1.title.left
-              = link_to 'Benji Dalton', root_path
-          %section.right-small
-            %a.right-off-canvas-toggle.menu-icon{:href => "#"}
-              %span
-        %aside.right-off-canvas-menu
-          %ul.off-canvas-list
-            %li
-              = link_to 'About', root_path
-            %li
-              = link_to 'Blog', articles_path
-            %li
-              = link_to 'Portfolio', portfolio_path
-            %li
-              = link_to 'Contact', contact_path
-        = render 'layouts/messages'
-        = yield
-        %a.exit-off-canvas
+    = render 'layouts/messages'
+    = yield
     = javascript_include_tag "application"
-    :javascript
-      if (window.location.hash === "#portfolio") {
-        window.location = '/portfolio'
-      }
