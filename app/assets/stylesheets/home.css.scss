@@ -3,8 +3,22 @@
   position: fixed;
   height: 100%;
   background: tomato;
+  width: 15rem;
 }
 
-code {
-  font-size: .6rem;
+main {
+  margin-left: 15rem;
+  padding: 1rem;
+  max-width: 60rem;
+  margin-bottom: 4rem;
+}
+
+footer {
+  margin-left: 15rem;
+  padding: 1rem;
+  border-top: .3rem solid #DFDFDF;
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  bottom: 0;
 }
