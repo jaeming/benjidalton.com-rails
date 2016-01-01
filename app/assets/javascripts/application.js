@@ -14,6 +14,41 @@
 //= require jquery_ujs
 //= require_tree .
 
-var path = $(location).attr('pathname');
-var page = path.split('/')[1] || 'about'
-$( "#" + page ).addClass( "active" );
+// var path = $(location).attr('pathname');
+// var page = path.split('/')[1] || 'about'
+// $( "#" + page ).addClass( "active" );
+
+
+
+
+// Set Router For Cold Entries
+function setRouter() {
+  if ($('.sidebar').length === 0) {
+    var path = {href: window.location.pathname};
+    $('.content').hide();
+    $('.content').load('/', function() {
+      routeTo(path);
+      $('.content').fadeIn('slow');
+    });
+  }
+};
+
+
+setRouter();
+
+// Route to Destination & Save History State
+function routeTo(dest) {
+  var url = dest.href;
+  history.pushState(url, null, url);
+  event.preventDefault();
+  $('main').load(url);
+};
+
+// Load History State
+window.addEventListener('popstate', function(e) {
+  if (e.state) {
+    $('main').load(e.state);
+  }else{
+    $('main').load("/home");
+  }
+});

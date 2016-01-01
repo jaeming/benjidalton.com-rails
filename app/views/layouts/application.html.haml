@@ -5,8 +5,8 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %title= content_for?(:title) ? yield(:title) : "Benji Dalton"
     = stylesheet_link_tag    "application"
-    = javascript_include_tag "vendor/modernizr"
     = csrf_meta_tags
     = render 'layouts/messages'
-    = yield
-    = javascript_include_tag "application"
+    .content
+      = yield
+    = javascript_include_tag "application"   
