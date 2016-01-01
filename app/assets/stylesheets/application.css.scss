@@ -2,8 +2,9 @@
  *= require_self
  *= require_tree .
  */
-@import url(http://fonts.googleapis.com/css?family=Lobster);
 
+@import 'reset';
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 
 .field_with_errors {
   background: tomato;
