@@ -14,9 +14,14 @@
 //= require jquery_ujs
 //= require_tree .
 
-// var path = $(location).attr('pathname');
-// var page = path.split('/')[1] || 'about'
-// $( "#" + page ).addClass( "active" );
+var path = window.location.pathname.split('/')[1] || 'home';
+var nav = $('nav ul a').removeClass("active");
+$.each(nav, function() {
+  var linkPath = $(this).attr('href').split('/')[1];
+  if (linkPath === path) {
+    $(this).addClass('active')
+  }
+});
 
 
 
@@ -32,8 +37,6 @@ function setRouter() {
     });
   }
 };
-
-
 setRouter();
 
 // Route to Destination & Save History State
