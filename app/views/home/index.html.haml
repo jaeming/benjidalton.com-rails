@@ -1,18 +1,17 @@
-.sidebar
-  %h1 Benji Dalton
-  %nav
-    %ul
-      %li
-        %a{:href => "/home", :onclick => "routeTo(this)"} Home
-      %li
-        %a{:href => "/articles", :onclick => "routeTo(this)"} Blog
-      %li
-        %a{:href => "/porfolio", :onclick => "routeTo(this)"} Portfolio
-      %li
-        %a{:href => "/contact", :onclick => "routeTo(this)"} Contact
 %main
   = render template: "home/home"
-%footer
-  %a{:href => "/"} Github
-  %a{:href => "/"} Linkedin
-  %a{:href => "/"} Codepen
+.sidebar
+  = image_tag "benji.jpg", class: "sidebar_avatar"
+  %h1.sidebar_title Benji Dalton
+  %small.sidebar_subtitle
+    Full Stack Developer
+  %nav
+    %ul
+      %a.active{:href => "/home", :onclick => "routeTo(this)"}
+        %li Home
+      %a{:href => "/articles", :onclick => "routeTo(this)"}
+        %li Blog
+      %a{:href => "/porfolio", :onclick => "routeTo(this)"}
+        %li Portfolio
+      %a{:href => "/contact", :onclick => "routeTo(this)"}
+        %li Contact

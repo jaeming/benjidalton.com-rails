@@ -4,9 +4,14 @@
  */
 
 @import 'reset';
-@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Lobster|Oxygen);
 
-
+body {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #575757;
+}
 
 
 .field_with_errors {
