@@ -15,5 +15,4 @@
           = h month.strftime("%B %Y")
         - for article in articles
           %small.archive-post
-            =h link_to article.title, article_path(article)
-
+            =h link_to article.title, article_path(article), onclick: "routeTo(this)"
