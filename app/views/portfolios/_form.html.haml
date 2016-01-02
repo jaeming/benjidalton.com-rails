@@ -1,0 +1,12 @@
+= simple_form_for(@portfolio) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :title
+    = f.input :description
+    = f.input :image
+    = f.input :link_to_src
+    = f.input :link_to_site
+
+  .form-actions
+    = f.button :submit

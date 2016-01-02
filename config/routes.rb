@@ -5,8 +5,7 @@ Rails.application.routes.draw do
   get 'home' => 'home#home', as: :home
   get 'about' => 'home#index', as: :about
   get 'contact' => 'home#contact', as: :contact
-  get 'portfolio' => 'home#portfolio', as: :portfolio
-
+  resources :portfolios, path: "portfolio"
   resources :articles
 
   namespace :api do
