@@ -7,11 +7,11 @@
     Full Stack Developer
   %nav
     %ul
-      %a.active{:href => "/home", :onclick => "routeTo(this)"}
+      = link_to home_path, onclick: "routeTo(this)" do
         %li Home
-      %a{:href => "/articles", :onclick => "routeTo(this)"}
+      = link_to articles_path, onclick: "routeTo(this)" do
         %li Blog
-      %a{:href => "/porfolio", :onclick => "routeTo(this)"}
+      = link_to "#", onclick: "routeTo(this)" do
         %li Portfolio
-      %a{:href => "/contact", :onclick => "routeTo(this)"}
+      = link_to contact_path, onclick: "routeTo(this)" do
         %li Contact
