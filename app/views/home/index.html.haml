@@ -1,14 +1,15 @@
 %main
   = render template: "home/home"
 .sidebar
-  = image_tag "benji.jpg", class: "sidebar_avatar"
-  %h1.sidebar_title Benji Dalton
-  %small.sidebar_subtitle
-    Full Stack Developer
+  = link_to home_path, onclick: "routeTo(this)" do
+    .sidebar-bio
+      = image_tag "benji.jpg", class: "sidebar_avatar"
+      %h1.sidebar_title Benji Dalton
+      %small.sidebar_subtitle Full Stack Developer
   %nav
     %ul
       = link_to home_path, onclick: "routeTo(this)" do
-        %li Home
+        %li About
       = link_to articles_path, onclick: "routeTo(this)" do
         %li Blog
       = link_to portfolios_path, onclick: "routeTo(this)" do
