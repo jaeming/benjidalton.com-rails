@@ -24,8 +24,6 @@ $.each(nav, function() {
 });
 
 
-
-
 // Set Router For Cold Entries
 function setRouter() {
   if ($('.sidebar').length === 0) {
@@ -39,6 +37,7 @@ function setRouter() {
 };
 setRouter();
 
+
 // Route to Destination & Save History State
 function routeTo(dest) {
   var url = dest.href;
@@ -46,6 +45,7 @@ function routeTo(dest) {
   event.preventDefault();
   $('main').load(url);
 };
+
 
 // Load History State
 window.addEventListener('popstate', function(e) {
@@ -56,6 +56,7 @@ window.addEventListener('popstate', function(e) {
   }
 });
 
+
 // Scroll-to (animated)
 function scrollTo(dest) {
   var anchor = $("#"+dest);
@@ -64,3 +65,22 @@ function scrollTo(dest) {
     scrollTop: anchor.offset().top
   }, 1000);
 };
+
+
+// hides element Based on url
+function hideIfURL() {
+  var condition = function() {
+    return window.location.pathname.split('/')[1] || 'home';
+  }
+  var elements = $('.hide.if');
+  $.each(elements, function() {
+    if (this.dataset.url === condition()) {
+      $(this).show()
+    }else if (this.dataset.url[0] === "!") {
+      (this.dataset.url.split('!')[1] === condition()) ? $(this).hide() : $(this).show()
+    }else{
+      $(this).hide()
+    }
+  });
+}
+hideIfURL();

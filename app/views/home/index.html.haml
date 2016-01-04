@@ -1,8 +1,4 @@
-%header
-  .header-text-container
-    %h2.header_title Benji's Adventures in Development
-    %p.header_subtitle Sundry thoughts on coding, living, and treading water...
-    %a{href: "/#outlet", class: 'header_button', onclick: 'scrollTo("outlet")'} Check It Out
+= render 'header'
 %main#outlet
   = render template: "home/home"
 .sidebar
@@ -13,12 +9,10 @@
       %small.sidebar_subtitle Full Stack Developer
   %nav
     %ul
-      = link_to '#', onclick: "routeTo(this)" do
+      = link_to home_path, onclick: "routeTo(this)" do
         %li Home
       = link_to portfolios_path, onclick: "routeTo(this)" do
         %li Portfolio
-      = link_to home_path, onclick: "routeTo(this)" do
-        %li About Me
       = link_to articles_path, onclick: "routeTo(this)" do
         %li Thoughts
       = link_to contact_path, onclick: "routeTo(this)" do
