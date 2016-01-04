@@ -55,3 +55,12 @@ window.addEventListener('popstate', function(e) {
     $('main').load("/home");
   }
 });
+
+// Scroll-to (animated)
+function scrollTo(dest) {
+  var anchor = $("#"+dest);
+  event.preventDefault();
+  $('html,body').animate({
+    scrollTop: anchor.offset().top
+  }, 1000);
+};

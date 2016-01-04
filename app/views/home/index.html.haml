@@ -1,8 +1,8 @@
 %header
-  %h2.header_title Brighter than ever
-  %p sundry thoughts on web development and more
-  = link_to 'check it out', home_path, onclick: "routeTo(this)"
-%main
+  %h2.header_title Benji's Adventures in Development
+  %p.header_subtitle Sundry thoughts on coding, living, and treading water...
+  %a{href: "/#outlet", class: 'header_button', onclick: 'scrollTo("outlet")'} Check It Out
+%main#outlet
   = render template: "home/home"
 .sidebar
   = link_to home_path, onclick: "routeTo(this)" do
