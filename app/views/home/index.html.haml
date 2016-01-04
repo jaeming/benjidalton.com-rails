@@ -1,3 +1,7 @@
+%header
+  %h2.header_title Brighter than ever
+  %p sundry thoughts on web development and more
+  = link_to 'check it out', home_path, onclick: "routeTo(this)"
 %main
   = render template: "home/home"
 .sidebar
@@ -8,11 +12,13 @@
       %small.sidebar_subtitle Full Stack Developer
   %nav
     %ul
-      = link_to home_path, onclick: "routeTo(this)" do
-        %li About
-      = link_to articles_path, onclick: "routeTo(this)" do
-        %li Blog
+      = link_to '#', onclick: "routeTo(this)" do
+        %li Home
       = link_to portfolios_path, onclick: "routeTo(this)" do
         %li Portfolio
+      = link_to home_path, onclick: "routeTo(this)" do
+        %li About Me
+      = link_to articles_path, onclick: "routeTo(this)" do
+        %li Thoughts
       = link_to contact_path, onclick: "routeTo(this)" do
         %li Contact
