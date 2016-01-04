@@ -1,7 +1,8 @@
 %header
-  %h2.header_title Benji's Adventures in Development
-  %p.header_subtitle Sundry thoughts on coding, living, and treading water...
-  %a{href: "/#outlet", class: 'header_button', onclick: 'scrollTo("outlet")'} Check It Out
+  .header-text-container
+    %h2.header_title Benji's Adventures in Development
+    %p.header_subtitle Sundry thoughts on coding, living, and treading water...
+    %a{href: "/#outlet", class: 'header_button', onclick: 'scrollTo("outlet")'} Check It Out
 %main#outlet
   = render template: "home/home"
 .sidebar
