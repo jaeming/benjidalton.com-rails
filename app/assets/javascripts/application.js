@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require_tree .
 
+// Set Active class on nav
 var path = window.location.pathname.split('/')[1] || 'home';
 var nav = $('nav ul a').removeClass("active");
 $.each(nav, function() {
@@ -22,6 +23,22 @@ $.each(nav, function() {
     $(this).addClass('active')
   }
 });
+
+// Component Constructor
+function Component() {
+  this.states = {};
+  this.actions = {};
+}
+
+///// Registered Components
+var header = new Component();
+header.states = {
+  homeURL: function() {
+    var url = window.location.pathname.split('/')[1] || 'home';
+    this.condition = (url === 'home');
+    return condition
+  }
+}
 
 
 // Set Router For Cold Entries
@@ -66,21 +83,22 @@ function scrollTo(dest) {
   }, 1000);
 };
 
-
 // hides element Based on url
-function hideIfURL() {
-  var condition = function() {
-    return window.location.pathname.split('/')[1] || 'home';
-  }
-  var elements = $('.hide.if');
+function showIf() {
+  var elements = $('view-if');
   $.each(elements, function() {
-    if (this.dataset.url === condition()) {
-      $(this).show()
-    }else if (this.dataset.url[0] === "!") {
-      (this.dataset.url.split('!')[1] === condition()) ? $(this).hide() : $(this).show()
+    var elseCond = $(this).find('view-else');
+    var data = this.dataset;
+    var component = Object.keys(data)[0];
+    var state = window[component].states[data[component]]
+
+    if (state() === true) {
+      $(this).children().show()
+      elseCond.hide();
     }else{
-      $(this).hide()
+      $(this).children().hide();
+      elseCond.show();
     }
   });
 }
-hideIfURL();
+showIf();
