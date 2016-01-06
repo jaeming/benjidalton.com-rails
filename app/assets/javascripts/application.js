@@ -103,9 +103,14 @@ function viewIf() {
 }
 viewIf();
 
-// Bio avatar grow
+// Bio avatar animation grow
+var avatar = {fired: false};
+
 function avatarGrow() {
-  $('.sidebar_avatar').addClass('sidebar_avatar-grow');
+  if (avatar.fired === false) {
+    $('.sidebar_avatar').addClass('sidebar_avatar-grow');
+    avatar.fired = true;
+  }
 };
 function avatarShrink() {
   $('.sidebar_avatar').removeClass('sidebar_avatar-grow');
@@ -116,5 +121,15 @@ $('.sidebar_avatar').one("mouseenter", function() {
   setTimeout(avatarShrink, 4000);
 });
 
-setTimeout(avatarGrow, 30000);
-setTimeout(avatarShrink, 34000);
+function autoAvatarAnimation() {
+    setTimeout(avatarGrow, 1000);
+    setTimeout(avatarShrink, 4000);
+};
+
+setTimeout(autoAvatarAnimation, 35000);
+
+// Fade in about section photo
+$("#about .section-photo-cont").hide()
+$(window).one("scroll", function() {
+  $("#about .section-photo-cont").fadeIn(1800)
+});

@@ -8,8 +8,12 @@ body {
 main {
   margin-left: 17rem;
   padding: 2rem;
-  max-width: 60rem;
+  max-width: 100%;
   margin-bottom: 4rem;
+  .content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
 
 .panel {
@@ -17,4 +21,17 @@ main {
   padding: 1.3rem;
   background: #fff;
   box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.section-photo {
+  max-width: 100%;
+  margin-bottom: .5rem;
+}
+
+.centered {
+  text-align: center;
+}
+
+.spacer {
+  margin: 1.8rem 0;
 }

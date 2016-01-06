@@ -1,14 +1,19 @@
-%h2#about About me
-%p
-  I've lived in many different places, from Florida to New Zealand, and done many different things, including filmmaking, songwriting, motion graphics, and design. Mostly I'm passionate about creating things. I enjoy working with Ruby on Rails and front-end technologies like Angular and Ember.js. I like learning new things and adding fresh skills to my arsenal.
-%br
-  %p.list-syled_header Technology-related Skills
+#about
+  %h2.section_title About Me
+  %p.text
+    I've lived in many different places, from Florida to New Zealand, and done many different things, including filmmaking, songwriting, motion graphics, and design. Mostly I'm passionate about creating things. I enjoy working with Ruby on Rails and front-end technologies like Angular and Ember.js. I like learning new things and adding fresh skills to my arsenal.
+  %br
+  .section-photo-cont
+    = image_tag "about.jpg", class: 'section-photo'
+    %p.styled_header.centered balance and symmetry as a way of life...
+  %h3.section_title_small Philosophy
+  %small
+    There's a certain sense of accomplishment and satisfaction that comes with crafting something. I've always been fascinated by the connection between science and art, the balance of technique and creative vision. The duality in those seemingly opposite spectrums, like yin and yang, come together in a beautiful way, complimenting each other. In any case, at some point I began to feel an interest in the art and science of coding. How far down the rabbit hole will I go? It's a long way down...
+  .spacer
+  %p.styled_header Technology Skills
   %ul.list-styled
-    %li HTML5 / CSS3
     %li Ruby
+    %li Rails
     %li Javascript
-    %li MVC Frameworks
-%br
-%h3 Philosophy
-%small
-  There's a certain sense of accomplishment and satisfaction that comes with crafting something. I've always been fascinated by the connection between science and art, the balance of technique and creative vision. The duality in those seemingly opposite spectrums, like yin and yang, come together in a beautiful way, complimenting each other. In any case, at some point I began to feel an interest in the art and science of coding. How far down the rabbit hole will I go? It's a long way down...
+    %li Angular / Ember
+    %li HTML5 / CSS3
