@@ -84,7 +84,7 @@ function scrollTo(dest) {
 };
 
 // hides element Based on url
-function showIf() {
+function viewIf() {
   var elements = $('view-if');
   $.each(elements, function() {
     var elseCond = $(this).find('view-else');
@@ -101,4 +101,4 @@ function showIf() {
     }
   });
 }
-showIf();
+viewIf();

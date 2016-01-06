@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.5'
 gem 'friendly_id', '~> 5.1.0'
+gem "font-awesome-rails"
 gem 'pg'
 gem 'simple_form'
 gem 'haml-rails'
