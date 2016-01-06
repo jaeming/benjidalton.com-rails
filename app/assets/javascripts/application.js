@@ -102,3 +102,19 @@ function viewIf() {
   });
 }
 viewIf();
+
+// Bio avatar grow
+function avatarGrow() {
+  $('.sidebar_avatar').addClass('sidebar_avatar-grow');
+};
+function avatarShrink() {
+  $('.sidebar_avatar').removeClass('sidebar_avatar-grow');
+};
+
+$('.sidebar_avatar').one("mouseenter", function() {
+  avatarGrow();
+  setTimeout(avatarShrink, 4000);
+});
+
+setTimeout(avatarGrow, 30000);
+setTimeout(avatarShrink, 34000);

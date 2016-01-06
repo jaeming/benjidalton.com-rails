@@ -1,32 +1,19 @@
 .sidebar
   = link_to home_path, onclick: "routeTo(this)" do
     .sidebar-bio
-      = image_tag "benji.jpg", class: "sidebar_avatar"
-      %h1.sidebar_title Benji Dalton
-      %small.sidebar_subtitle Full Stack Developer
-  %nav
-    %ul
-      = link_to home_path, onclick: "routeTo(this)" do
-        %li
-          %span.nav_icon
-            = fa_icon "home"
-          %span.nav_title
-            Home
-      = link_to portfolios_path, onclick: "routeTo(this)" do
-        %li
-          %span.nav_icon
-            = fa_icon "th"
-          %span.nav_title
-            Portfolio
-      = link_to articles_path, onclick: "routeTo(this)" do
-        %li
-          %span.nav_icon
-            = fa_icon "lightbulb-o"
-          %span.nav_title
-            Thoughts
-      = link_to contact_path, onclick: "routeTo(this)" do
-        %li
-          %span.nav_icon
-            = fa_icon "envelope"
-          %span.nav_title
-            Contact
+      = image_tag "benjiv2.jpg", class: "sidebar_avatar"
+      .watup
+        Wat up?
+      .sidebar_name
+        %h1.sidebar_title Benji Dalton
+        %small.sidebar_subtitle Full Stack Developer
+  = render 'nav'
+  .sidebar_social-icons
+    %a{:href => "http://github.com/jaeming", target: "_blank"}
+      = fa_icon "github"
+    %a{:href => "http://twitter.com/daylightsavings", target: "_blank"}
+      = fa_icon "twitter"
+    %a{:href => "https://nz.linkedin.com/in/benjidalton", target: "_blank"}
+      = fa_icon "linkedin"
+    %a{:href => "mailto:daylightsavings@icloud.com", target: "_blank"}
+      = fa_icon "envelope-o"
