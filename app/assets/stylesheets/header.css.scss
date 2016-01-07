@@ -43,11 +43,5 @@
 }
 
 .header_button {
-  color: #fff;
-  background: #56D7D2;
-  padding: 1rem 2rem;
-  border-radius: .6rem;
-  &:hover {
-    background: #54908e;
-  }
+  @extend .button
 }

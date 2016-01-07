@@ -1,17 +1,23 @@
 .row
-  .columns.medium-6
-    %h1 Contact
-    %p
-      Feel free to get in touch! I'm a very sociable sort of fellow. either email me
-      %a{:href => "mailto:daylightsavings@icloud.com"} directly
-      or use the form here. Alternatively, reach out to me on
-      = succeed "." do
-        %a{:href => "https://twitter.com/daylightsavings"} Twitter
-  .columns.medium-6.side-badge
-    %h2 Get in touch
-    %form.form{:action => "http://getsimpleform.com/messages?form_api_token=3f143ad87b45f800de4601222be5716f", :method => "post"}
-      %input{:name => "redirect_to", :type => "hidden", :value => "http://benjidalton.com/thanks.html"}/
-      %input.w-input.field{"data-name" => "Name", :name => "name", :placeholder => "Your name", :type => "text"}/
-      %input.w-input.field{"data-name" => "Email", :name => "email", :placeholder => "Your email address", :required => "required", :type => "email"}/
+  %h2.section_title Contact
+  %p.text
+    Feel free to get in touch! I'm a very sociable sort of fellow. either email me
+    %a{:href => "mailto:daylightsavings@icloud.com"} directly
+    or use the form here. Alternatively, reach out to me on
+    = succeed "." do
+      %a{:href => "https://twitter.com/daylightsavings"} Twitter
+.row
+  .border &nbsp;
+  %h3.section_title_small Get in touch
+  %br
+  %form.form{:action => "http://getsimpleform.com/messages?form_api_token=3f143ad87b45f800de4601222be5716f", :method => "post"}
+    %input{:name => "redirect_to", :type => "hidden", :value => "http://benjidalton.com/thanks.html"}/
+    .form_left
+      %input.w-input.field{"data-name" => "Name", :name => "name", :placeholder => "Name", :type => "text"}/
+    .form_right
+      %input.w-input.field{"data-name" => "Email", :name => "email", :placeholder => "Email", :required => "required", :type => "email"}/
+    %br
+    .form_message
       %textarea.w-input.field.comments{:name => "message", :placeholder => "Message"}
-      %input.w-button.button{"data-wait" => "Please wait...", :type => "submit", :value => "Send Message"}/
+    %br
+    %input.w-button.button{"data-wait" => "Please wait...", :type => "submit", :value => "Send Message"}/
