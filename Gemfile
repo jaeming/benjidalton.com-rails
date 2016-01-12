@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 gem 'friendly_id', '~> 5.1.0'
 gem "font-awesome-rails"
+gem 'sass-rails', '~> 5.0.0'
+gem 'susy'
 gem 'pg'
 gem 'simple_form'
 gem 'haml-rails'
@@ -23,8 +25,6 @@ group :development, :test do
   gem 'spring'
 end
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views

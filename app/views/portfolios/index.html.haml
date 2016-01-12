@@ -1,29 +1,17 @@
-%h1 Listing portfolios
-
-%table
-  %thead
-    %tr
-      %th Title
-      %th Description
-      %th Image
-      %th Link to src
-      %th Link to site
-      %th
-      %th
-      %th
-
-  %tbody
-    - @portfolios.each do |portfolio|
-      %tr
-        %td= portfolio.title
-        %td= portfolio.description
-        %td= portfolio.image
-        %td= portfolio.link_to_src
-        %td= portfolio.link_to_site
-        %td= link_to 'Show', portfolio
-        %td= link_to 'Edit', edit_portfolio_path(portfolio)
-        %td= link_to 'Destroy', portfolio, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
+.row
+  %h2.section_title Portfolio
+  - if current_user
+    = link_to 'New Portfolio Item', new_portfolio_path, onclick: "routeTo(this)", class: "button"
+  - @portfolios.each do |portfolio|
+    .portfolio-card
+      = link_to portfolio do
+        %h3= portfolio.title
+        = image_tag portfolio.image
+      %p= portfolio.description
+      = link_to 'Web Site', portfolio.link_to_site, target: "_blank"
+      %br
+      = link_to 'Source Code', portfolio.link_to_src, target: "_blank"
+      - if current_user
+        %p= link_to 'Edit', edit_portfolio_path(portfolio), class: "button"
+        %p= link_to 'Destroy', portfolio, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: "button"
 %br
-
-= link_to 'New Portfolio', new_portfolio_path, onclick: "routeTo(this)"
