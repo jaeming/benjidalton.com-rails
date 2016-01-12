@@ -121,13 +121,6 @@ $('.sidebar_avatar').one("mouseenter", function() {
   setTimeout(avatarShrink, 4000);
 });
 
-function autoAvatarAnimation() {
-    setTimeout(avatarGrow, 1000);
-    setTimeout(avatarShrink, 4000);
-};
-
-setTimeout(autoAvatarAnimation, 35000);
-
 // Fade in about section photo
 $("#about .section-photo-cont").hide()
 $(window).one("scroll", function() {
