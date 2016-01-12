@@ -27,11 +27,6 @@ main {
   margin-top: 2.8rem;
 }
 
-.row {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 .panel {
   margin: 2rem 0;
   padding: 1.3rem;
@@ -46,6 +41,14 @@ main {
 
 .centered {
   text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
 
 .spacer {

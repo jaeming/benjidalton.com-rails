@@ -4,7 +4,12 @@
 
 @import 'reset';
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300|Roboto+Slab|Lobster|Oxygen);
-@import "font-awesome";
+@import 'font-awesome';
+@import 'foundation';
+@import 'breakpoint';
+$desktop: max-width 1200px;
+$tablet: max-width 1000px;
+
 @import 'base';
 @import 'typography';
 @import 'header';

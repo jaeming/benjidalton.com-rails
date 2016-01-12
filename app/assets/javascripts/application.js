@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require match-height
 //= require_tree .
 
 // Set Active class on nav

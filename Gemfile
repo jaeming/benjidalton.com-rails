@@ -4,7 +4,7 @@ gem 'rails', '4.2.5'
 gem 'friendly_id', '~> 5.1.0'
 gem "font-awesome-rails"
 gem 'sass-rails', '~> 5.0.0'
-gem 'susy'
+gem 'breakpoint'
 gem 'pg'
 gem 'simple_form'
 gem 'haml-rails'
