@@ -12,6 +12,7 @@ gem 'redcarpet'
 gem 'newrelic_rpm'
 gem 'active_model_serializers'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'faker'
 
 gem 'rails_12factor', group: :production
 
