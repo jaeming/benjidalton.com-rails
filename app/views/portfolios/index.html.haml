@@ -14,4 +14,4 @@
               %h3.portfolio-title= portfolio.title
             - if current_user
               %p= link_to 'Edit', edit_portfolio_path(portfolio), class: "button"
-              %p= link_to 'Destroy', portfolio, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: "button"
+              %p= link_to 'Destroy', portfolio, :method => :delete, class: "button"
