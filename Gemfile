@@ -14,7 +14,7 @@ gem 'redcarpet'
 gem 'newrelic_rpm'
 gem 'active_model_serializers'
 gem 'rack-cors', :require => 'rack/cors'
-gem 'faker'
+gem "figaro"
 
 gem 'rails_12factor', group: :production
 
@@ -23,6 +23,8 @@ group :development, :test do
   gem 'minitest'
   gem 'thor'
   gem 'spring'
+  gem 'pry-rails'
+  gem 'faker'
 end
 
 # Use Uglifier as compressor for JavaScript assets
