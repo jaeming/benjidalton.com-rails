@@ -17,14 +17,15 @@ class PortfoliosController < ApplicationController
 
   def create
     @portfolio = Portfolio.new(portfolio_params)
+    image_url = ImageUploadService.upload(portfolio_params[:image])
+    @portfolio.image = image_url
     @portfolio.save!
     redirect_to @portfolio, notice: 'Portfolio was successfully created.'
   end
 
   def update
-    file = portfolio_params[:image]
-    image = ImageUploadService.upload(file)
-    @portfolio.update!(portfolio_params.except(:image).merge(image: image))
+    image_url = ImageUploadService.upload(portfolio_params[:image]) || @portfolio.image
+    @portfolio.update!(portfolio_params.except(:image).merge(image: image_url))
     redirect_to @portfolio, notice: 'Portfolio was successfully updated.'
   end
 

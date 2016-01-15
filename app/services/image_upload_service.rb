@@ -4,6 +4,7 @@ class ImageUploadService
   require 'digest/sha1'
 
   def self.upload(file)
+    return file unless file.is_a?(ActionDispatch::Http::UploadedFile)
     #request API Authorization
     authorization_response = ImageUploadService.authorize_account
     auth_token = authorization_response["authorizationToken"]
