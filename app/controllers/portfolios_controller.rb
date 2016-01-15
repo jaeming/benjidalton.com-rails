@@ -23,7 +23,7 @@ class PortfoliosController < ApplicationController
 
   def update
     file = portfolio_params[:image]
-    image = Portfolio.upload(file)
+    image = ImageUploadService.upload(file)
     @portfolio.update!(portfolio_params.except(:image).merge(image: image))
     redirect_to @portfolio, notice: 'Portfolio was successfully updated.'
   end
