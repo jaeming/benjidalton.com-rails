@@ -1,21 +1,20 @@
-%p#notice= notice
-
-%p
-  %b Title:
-  = @portfolio.title
-%p
-  %b Description:
-  = @portfolio.description
-%p
-  %b Image:
-  = @portfolio.image
-%p
-  %b Link to src:
-  = @portfolio.link_to_src
-%p
-  %b Link to site:
-  = @portfolio.link_to_site
-
-= link_to 'Edit', edit_portfolio_path(@portfolio)
-\|
-= link_to 'Back', portfolios_path, onclick: "routeTo(this)"
+.row
+  %h2.section_title
+    = link_to 'Portfolio', portfolios_path, onclick: "routeTo(this)"
+    > #{@portfolio.title}
+  .border &nbsp;
+.row
+  .columns.medium-4
+    = image_tag @portfolio.image
+  .columns.medium-6
+    %p= @portfolio.description
+.border &nbsp;
+.row
+  %p.left
+    link to:
+    = link_to 'Site', @portfolio.link_to_site
+  %p.right
+    link to:
+    = link_to 'Source', @portfolio.link_to_src  
+- if current_user
+  = link_to 'Edit', edit_portfolio_path(@portfolio)
