@@ -1,0 +1,24 @@
+.mobile-menu {
+  font-size: 1.1rem;
+  z-index: 201;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  background: rgb(167, 167, 167);
+  color: #fff;
+  padding: .7rem 2rem;
+  width: 100%;
+  cursor: pointer;
+  display: none;
+  @include breakpoint($tablet) {
+    display: block;
+    transition: all 450ms ease;
+  }
+}
+
+.menu-bar-hide {
+  @include breakpoint($tablet) {
+    margin-top: -3rem;
+    transition: all 450ms ease;
+  }
+}

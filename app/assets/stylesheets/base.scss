@@ -10,6 +10,18 @@ main {
   padding: 2rem;
   max-width: 100%;
   margin-bottom: 4rem;
+  transition: all 450ms ease;
+
+  @include breakpoint($tablet) {
+    margin-left: 0;
+    transition: all 450ms ease;
+  }
+}
+
+.main-obscured {
+  @include breakpoint($tablet) {
+    filter: blur(20px);
+  }
 }
 
 .button {
