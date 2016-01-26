@@ -1,20 +1,18 @@
-%section
-%br
-  .row
-    .columns.medium-8
-      %h1.left Blog
-      .left.new-post
-        - if current_user
-          = link_to 'New Article', new_article_path, class: 'button tiny round'
-      %hr
-      = render @articles
-    .columns.medium-4.side-badge
-      %h2 Archives
-      - @article_months.sort.reverse.each do |month, articles|
+.row
+  %h2.section_title Blog
+  .border &nbsp;
+  .columns.medium-8
+    .left.new-post
+      - if current_user
+        = link_to 'New Article', new_article_path, class: 'button tiny round'
+    = render @articles
+  .columns.medium-4.side-badge
+    %h2 Archives
+    - @article_months.sort.reverse.each do |month, articles|
+      %br
+      %small.archives
+        = h month.strftime("%B %Y")
+      - for article in articles
         %br
-        %small.archives
-          = h month.strftime("%B %Y")
-        - for article in articles
-          %br
-          %small.archive-post
-            =h link_to article.title, article_path(article), onclick: "routeTo(this)"
+        %small.archive-post
+          =h link_to article.title, article_path(article), onclick: "routeTo(this)"

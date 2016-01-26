@@ -1,5 +1,7 @@
-%h4
-  = article.title
+%br
+= link_to article_path(article), onclick: "routeTo(this)" do
+  %h3
+    = article.title
 %p
   ~ markdown article.text
 %small
