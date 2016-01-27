@@ -86,9 +86,9 @@ function scrollTo(dest) {
 
 // hides element Based on url
 function viewIf() {
-  var elements = $('view-if');
+  var elements = $('.view-if');
   $.each(elements, function() {
-    var elseCond = $(this).find('view-else');
+    var elseCond = $(this).find('.view-else');
     var data = this.dataset;
     var component = Object.keys(data)[0];
     var state = window[component].states[data[component]]
