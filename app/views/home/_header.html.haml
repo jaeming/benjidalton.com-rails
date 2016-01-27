@@ -1,9 +1,9 @@
-.view-if{"data-header": "homeURL"}
+.view-if{"data-header" => "homeURL"}
   %header.header_full
     .header-text-container
       %h2.header_title Benji's Adventures in Development
       %p.header_subtitle Sundry thoughts on coding, living, and treading water...
-      %a{href: "/#outlet", class: 'header_button', onclick: 'scrollTo("outlet")'} Check It Out
+      %a.header_button{href: "/#outlet", onclick: 'scrollTo("outlet")'} Check It Out
   .view-else
     %header.header_small
       .header-text-container
