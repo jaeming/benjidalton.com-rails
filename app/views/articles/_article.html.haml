@@ -2,16 +2,19 @@
 = link_to article_path(article), onclick: "routeTo(this)" do
   %h3
     = article.title
-.article-body
+- if article.large?
+.article-body.truncate
   ~ markdown article.text
-  -if article.large?
-    .bottom_fade
+  .bottom_fade
+- else
+  .article-body
+    ~ markdown article.text
 %small
-  -if article.large?
+  - if article.large?
     = link_to 'Read More', article_path(article)
   - else
     = link_to "- Posted on #{article.created_at.strftime('%B %d, %Y')}", article, onclick: "routeTo(this)"
-  -if current_user
+  - if current_user
     &nbsp; / &nbsp;
     = link_to "Edit", edit_article_path(article)
     &nbsp; / &nbsp;
