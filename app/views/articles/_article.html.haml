@@ -3,9 +3,9 @@
   %h3
     = article.title
 - if article.large?
-.article-body.truncate
-  ~ markdown article.text
-  .bottom_fade
+  .article-body.truncate
+    ~ markdown article.text
+    .bottom_fade
 - else
   .article-body
     ~ markdown article.text
