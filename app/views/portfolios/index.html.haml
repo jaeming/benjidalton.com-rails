@@ -3,7 +3,6 @@
   - if current_user
     = link_to 'New Portfolio Item', new_portfolio_path, onclick: "routeTo(this)", class: "button"
   .border &nbsp;
-  %p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   - @portfolios.in_groups_of(3, false).each do |group|
     .row
       - group.each do |portfolio|
