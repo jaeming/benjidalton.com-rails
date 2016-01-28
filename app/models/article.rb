@@ -18,6 +18,10 @@ class Article < ActiveRecord::Base
     self.save
   end
 
+  def large?
+    self.text.size > 500
+  end
+
   private
   def markdown(text)
     renderer = Redcarpet::Render::HTML.new
