@@ -22,6 +22,11 @@ small {
   font-size: 1rem;
   line-height: 1.8;
   text-align: justify;
+  @include breakpoint($mobile) {
+    font-size: .8rem;
+    text-align: left;
+    line-height: 1.6;
+  }
 }
 
 .text {
@@ -30,6 +35,9 @@ small {
   font-family: 'Oxygen', sans-serif;
   color: #7e7e7e;
   margin-bottom: 1.5rem;
+  @include breakpoint($mobile) {
+    font-size: 1rem;
+  }
 }
 
 
@@ -40,8 +48,10 @@ small {
 .styled_header {
   font-size: 1rem;
   color: #9c9c9c;
-  padding-right: 3rem;
   margin-bottom: 1rem;
+  @include breakpoint($mobile) {
+    font-size: .9rem;
+  }
 }
 .list-styled {
   border-left: 4px solid #56D7D2;
@@ -59,11 +69,24 @@ small {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   margin: 3rem 0;
+  @include breakpoint($mobile) {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 .section_title_small {
   margin-top: 2.6rem;
+  @include breakpoint($mobile) {
+    text-align: center;
+  }
 }
 
+.breadcrumb {
+  @include breakpoint($mobile) {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+}
 
 
 

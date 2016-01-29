@@ -9,6 +9,7 @@
 @import 'breakpoint';
 $desktop: max-width 1200px;
 $tablet: max-width 1000px;
+$mobile: max-width 750px;
 
 @import 'base';
 @import 'typography';

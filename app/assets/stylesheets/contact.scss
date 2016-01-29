@@ -1,5 +1,9 @@
 .form {
   width: 80%;
+  @include breakpoint($mobile) {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
 
 .form_left {
@@ -26,14 +30,19 @@ input, textarea, select {
   font-size: 1.2rem;
   line-height: 1.6em;
   color: #888;
+  @include breakpoint($mobile) {
+    font-size: .8rem;
+  }
 }
 
 input[type="button"],
 input[type="submit"] {
   @extend .button;
-  // text-decoration: none;
   border: 0;
   cursor: pointer;
+  @include breakpoint($mobile) {
+    width: 100%;
+  }
 }
 
 

@@ -53,11 +53,26 @@
   color: #fff;
   margin: 0 0 1rem 0;
   padding: 0;
+  @include breakpoint($mobile) {
+    font-size: 2rem;
+  }
+}
+
+.header_small {
+  .header_title {
+    @include breakpoint($mobile) {
+      margin-top: 2rem;
+    }
+  }
 }
 
 .header_subtitle {
   font-family: 'Oxygen', sans-serif;
   margin: 0 0 3rem 0;
+  @include breakpoint($mobile) {
+    font-size: .9rem;
+    margin: 0 .7rem 3rem .7rem;
+  }
 }
 
 .header_button {

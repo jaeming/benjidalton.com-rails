@@ -1,8 +1,8 @@
-.row
-  %h2.section_title
+.row.article-show
+  %h2.section_title.breadcrumb
     = link_to 'Blog', articles_path, onclick: "routeTo(this)"
     > #{@article.title}
-  .border &nbsp;    
+  .border &nbsp;
   %p
     ~ markdown @article.text
   %small

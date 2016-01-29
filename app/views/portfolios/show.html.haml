@@ -7,14 +7,15 @@
   .columns.medium-4
     = image_tag @portfolio.image
   .columns.medium-6
-    %p= @portfolio.description
+    %p.portfolio-description
+      = @portfolio.description
 .border &nbsp;
 .row
-  %p.left
+  %p.left.portfolio-link
     link to:
     = link_to 'Site', @portfolio.link_to_site
-  %p.right
+  %p.right.portfolio-link
     link to:
-    = link_to 'Source', @portfolio.link_to_src  
+    = link_to 'Source', @portfolio.link_to_src
 - if current_user
   = link_to 'Edit', edit_portfolio_path(@portfolio)
