@@ -9,7 +9,7 @@
         .columns.large-4
           .portfolio-card.card-shadow
             = link_to portfolio, onclick: "routeTo(this)" do
-              = image_tag portfolio.image
+              = image_tag portfolio.image, :class => 'card-shadow--no-hover'
               %h3.portfolio-title= portfolio.title
             - if current_user
               %p= link_to 'Edit', edit_portfolio_path(portfolio), class: "button"

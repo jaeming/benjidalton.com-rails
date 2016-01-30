@@ -5,7 +5,7 @@
   .border &nbsp;
 .row
   .columns.medium-4
-    = image_tag @portfolio.image
+    = image_tag @portfolio.image, :class => 'card-shadow--no-hover' 
   .columns.medium-6
     %p.portfolio-description
       = @portfolio.description
