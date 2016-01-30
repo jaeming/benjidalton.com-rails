@@ -2,7 +2,7 @@ class PortfoliosController < ApplicationController
   before_action :set_portfolio, only: [:show, :edit, :update, :destroy]
 
   def index
-    @portfolios = Portfolio.all
+    @portfolios = Portfolio.descending
   end
 
   def show
